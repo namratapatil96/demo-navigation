@@ -50,6 +50,7 @@ jobs:
       - name: Schema Publish (development)
         if: ${{ github.event_name == 'push' }}
         run: |
+          cd ./hive/
           yarn --cwd hive --silent schema:publish
           
       - name: Publish PR Comment
