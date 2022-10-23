@@ -50,11 +50,10 @@ jobs:
       - name: Schema Publish (development)
         if: ${{ github.event_name == 'push' }}
         run: |
-          cd ./hive/
           yarn --cwd hive --silent schema:publish
           
       - name: Publish PR Comment
         if: ${{ always() && github.event_name == 'pull_request' }}
         uses: marocchino/sticky-pull-request-comment@v2
         with:
-          path: ./hive/hive_output.txt
+          path: hive_output.txt
