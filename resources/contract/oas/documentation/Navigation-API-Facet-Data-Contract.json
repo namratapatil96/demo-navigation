@@ -1,7 +1,7 @@
 {
   "swagger": "2.0",
   "info": {
-    "description": "Providing navigational services for .COM platform",
+    "description": "Providing navigational services for .COM platform ",
     "version": "1.0",
     "title": "Navigation Facets API Documentation"
   },
