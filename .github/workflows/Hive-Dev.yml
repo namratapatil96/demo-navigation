@@ -46,7 +46,6 @@ jobs:
         run: |
           echo "### 🐝 Hive Schema Check" > hive_output.txt
           yarn --cwd hive --silent schema:check >> hive_output.txt
-          yarn --cwd hive --silent schema:checks >> hive_output_product.txt
           
       - name: Schema Publish (development)
         if: ${{ github.event_name == 'push' }}
