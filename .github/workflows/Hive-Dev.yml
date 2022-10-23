@@ -50,8 +50,7 @@ jobs:
       - name: Schema Check Product
         if: ${{ github.event_name == 'pull_request' }}
         run: |
-          echo "### 🐝 Hive Schema Check" > hive_output.txt
-          yarn --cwd hive --silent schema:checks >> hive_outputs.txt
+          yarn --cwd hive --silent schemas:checks >> hive_outputs.txt
           
       - name: Schema Publish (development)
         if: ${{ github.event_name == 'push' }}
