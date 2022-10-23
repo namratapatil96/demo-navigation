@@ -44,14 +44,12 @@ jobs:
       - name: Schema Check
         if: ${{ github.event_name == 'pull_request' }}
         run: |
-          cd ./hive/
           echo "### 🐝 Hive Schema Check" > hive_output.txt
           yarn --cwd hive --silent schema:check >> hive_output.txt
           
       - name: Schema Publish (development)
         if: ${{ github.event_name == 'push' }}
         run: |
-          cd ./hive/
           yarn --cwd hive --silent schema:publish
           
       - name: Publish PR Comment
