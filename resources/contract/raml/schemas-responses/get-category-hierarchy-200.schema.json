@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "array",
+  "items":[
+    {
+      "type": "object",
+      "properties": {
+        "_id": {
+          "$ref": "../schemas-common/navigation-category-hierarchy.schema.json#/properties/identifier"
+        },
+        "name": {
+          "$ref": "../schemas-common/navigation-category-hierarchy.schema.json#/properties/name"
+        },
+        "seoURL": {
+          "$ref": "../schemas-common/navigation-category-hierarchy.schema.json#/properties/seoURL"
+        },
+        "storeId": {
+          "$ref": "../schemas-common/navigation-category-hierarchy.schema.json#/properties/storeId"
+        },
+        "isChildExist": {
+          "$ref": "../schemas-common/navigation-category-hierarchy.schema.json#/properties/isChildExist"
+        },
+        "isFacetExist": {
+          "$ref": "../schemas-common/navigation-category-hierarchy.schema.json#/properties/isFacetExist"
+        },
+        "childCategories": {
+          "$ref": "../schemas-common/navigation-category-hierarchy.schema.json#/properties/childCategories"
+        }
+      },
+      "required": [
+        "_id",
+        "name",
+        "seoURL",
+        "storeId",
+        "isChildExist",
+        "childCategories"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "mappings": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "$ref": "../schemas-common/mapping-details.schema.json#/properties/identifier"
+            },
+            "alternateURLs": {
+              "$ref": "../schemas-common/mapping-details.schema.json#/properties/alternateURLs"
+            }
+          },
+          "required": [
+            "id",
+            "alternateURLs"
+          ]
+        }
+      ]
+    },
+    "pageNumber": {
+      "$ref": "../schemas-common/mapping-details.schema.json#/properties/pageNumber"
+    },
+    "totalPages": {
+      "$ref": "../schemas-common/mapping-details.schema.json#/properties/totalPages"
+    },
+    "pageSize": {
+      "$ref": "../schemas-common/mapping-details.schema.json#/properties/pageSize"
+    },
+    "totalElements": {
+      "$ref": "../schemas-common/mapping-details.schema.json#/properties/totalElements"
+    }
+  },
+  "required": [
+    "mappings",
+    "pageNumber",
+    "totalPages",
+    "pageSize",
+    "totalElements"
+  ]
+}

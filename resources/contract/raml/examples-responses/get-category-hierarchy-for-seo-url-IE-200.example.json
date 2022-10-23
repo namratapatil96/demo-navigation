@@ -1,0 +1,143 @@
+[
+  {
+    "_id": "IE_SC_Level_1_1000001",
+    "name": "Women",
+    "seoURL": "c/women",
+    "storeId": "IE",
+    "childCategories": [
+      {
+        "_id": "IE_SubCategory_20006017",
+        "name": "Clothing",
+        "seoURL": "",
+        "storeId": "IE",
+        "childCategories": [
+          {
+            "_id": "IE_SubCategory_1002041",
+            "name": "Dresses",
+            "seoURL": "l/women/dresses",
+            "storeId": "IE",
+            "childCategories": [
+              {
+                "_id": "IE_SubCategory_26523793",
+                "name": "Midi dresses",
+                "seoURL": "l/women/dresses/midi-dresses",
+                "storeId": "IE",
+                "isFacetExist": false,
+                "isChildExist": false,
+                "childCategories": []
+              },
+              {
+                "_id": "IE_SubCategory_26746257",
+                "name": "T-shirt dresses",
+                "seoURL": "l/women/dresses/tshirt-dresses",
+                "storeId": "IE",
+                "isFacetExist": false,
+                "isChildExist": false,
+                "childCategories": []
+              },
+              {
+                "_id": "IE_SubCategory_26792328",
+                "name": "Shirt dresses",
+                "seoURL": "l/women/dresses/shirt-dresses",
+                "storeId": "IE",
+                "isFacetExist": false,
+                "isChildExist": false,
+                "childCategories": []
+              },
+              {
+                "_id": "IE_SubCategory_24076364",
+                "name": "Print  dresses",
+                "seoURL": "l/women/dresses/print-dresses",
+                "storeId": "IE",
+                "isFacetExist": true,
+                "isChildExist": false,
+                "childCategories": []
+              },
+              {
+                "_id": "IE_SubCategory_26523990",
+                "name": "Mini dresses",
+                "seoURL": "l/women/dresses/mini-dresses",
+                "storeId": "IE",
+                "isFacetExist": false,
+                "isChildExist": false,
+                "childCategories": []
+              },
+              {
+                "_id": "IE_SubCategory_20304886",
+                "name": "Beach Dresses",
+                "seoURL": "l/women/dresses/beach-dresses",
+                "storeId": "IE",
+                "isFacetExist": false,
+                "isChildExist": false,
+                "childCategories": []
+              },
+              {
+                "_id": "IE_SubCategory_26792311",
+                "name": "Shift dresses",
+                "seoURL": "l/women/dresses/shift-dresses",
+                "storeId": "IE",
+                "isFacetExist": false,
+                "isChildExist": false,
+                "childCategories": []
+              },
+              {
+                "_id": "IE_SubCategory_8336851",
+                "name": "Summer Dresses",
+                "seoURL": "l/women/dresses/summer-dresses",
+                "storeId": "IE",
+                "isFacetExist": true,
+                "isChildExist": false,
+                "childCategories": []
+              },
+              {
+                "_id": "IE_SubCategory_13617200721",
+                "name": "Work Dresses",
+                "seoURL": "l/women/dresses/work-dresses",
+                "storeId": "IE",
+                "isFacetExist": true,
+                "isChildExist": false,
+                "childCategories": []
+              },
+              {
+                "_id": "IE_SubCategory_24076362",
+                "name": "Linen dresses",
+                "seoURL": "l/women/dresses/linen-dresses",
+                "storeId": "IE",
+                "isFacetExist": true,
+                "isChildExist": false,
+                "childCategories": []
+              },
+              {
+                "_id": "IE_SubCategory_26524190",
+                "name": "Maxi dresses",
+                "seoURL": "l/women/dresses/maxi-dresses",
+                "storeId": "IE",
+                "isFacetExist": false,
+                "isChildExist": false,
+                "childCategories": []
+              },
+              {
+                "_id": "IE_SubCategory_17495953",
+                "name": "Casual Dresses",
+                "seoURL": "l/women/dresses/casual-dresses",
+                "storeId": "IE",
+                "isFacetExist": true,
+                "isChildExist": false,
+                "childCategories": []
+              },
+              {
+                "_id": "IE_SubCategory_24925930",
+                "name": "Easy Dressing",
+                "seoURL": "l/women/dresses/easy-dressing",
+                "storeId": "IE",
+                "isFacetExist": false,
+                "isChildExist": false,
+                "childCategories": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

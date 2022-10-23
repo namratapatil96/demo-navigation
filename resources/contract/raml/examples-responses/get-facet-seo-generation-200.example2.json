@@ -1,0 +1,58 @@
+{
+  "pageSeoUrl": "l/kids/baby",
+  "facetSeoUrl": "l/kids/baby/fs5/boys:unisex?maxparcount=true",
+  "facetFields": {
+    "Gender": {
+      "id": "Gender",
+      "data": [
+        {
+          "name": "Unisex",
+          "selected": true,
+          "disabled": false,
+          "facetSeoUrl": "l/kids/baby/fs5/boys:unisex?maxparcount=true"
+        },
+        {
+          "name": "Boys",
+          "selected": true,
+          "disabled": false,
+          "facetSeoUrl": "l/kids/baby/fs5/boys:unisex?maxparcount=true"
+        },
+        {
+          "name": "Girls",
+          "selected": false,
+          "disabled": false,
+          "facetSeoUrl": "l/kids/baby/fs5/boys:girls:unisex?maxparcount=true"
+        }
+      ]
+    },
+    "Material": {
+      "id": "Material",
+      "data": [
+        {
+          "name": "Cotton",
+          "selected": false,
+          "disabled": false,
+          "facetSeoUrl": "l/kids/baby/fs5/boys:unisex/cotton?maxparcount=true"
+        },
+        {
+          "name": "Organic cotton",
+          "selected": false,
+          "disabled": false,
+          "facetSeoUrl": null
+        },
+        {
+          "name": "Cotton rich",
+          "selected": false,
+          "disabled": false,
+          "facetSeoUrl": null
+        },
+        {
+          "name": "Cotton mix",
+          "selected": false,
+          "disabled": false,
+          "facetSeoUrl": "l/kids/baby/fs5/boys:unisex/cotton-mix?maxparcount=true"
+        }
+      ]
+    }
+  }
+}

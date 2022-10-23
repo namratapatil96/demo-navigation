@@ -1,0 +1,19 @@
+#%RAML 1.0 Trait
+usage: Apply this trait to any methods searching for categories.
+queryParameters:
+      seoURL:
+        description: SEO URL for category details required.
+        type: string
+        required: true
+        example: "l/women/dresses"
+      storeId:
+        description: Country where SEO URL belongs to
+        type: string
+        required: true
+        enum: ["UK", "IE", "CFTO", "IECFTO"]
+      isAttrReq?:
+        description: Flag to filter out additional attributes required or not.
+        type: boolean
+        default: false
+        enum: [true, false]
+    

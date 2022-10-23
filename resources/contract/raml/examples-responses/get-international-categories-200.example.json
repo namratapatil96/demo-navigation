@@ -1,0 +1,32 @@
+[
+  {
+    "categoryId": "EU_SubCategory_25186184",
+    "alternateURLs": [
+      {
+        "locale": "en-GB",
+        "url": "https://www.marksandspencer.com/c/summer-shop"
+      },
+      {
+        "locale": "x-default",
+        "url": "https://www.marksandspencer.com/c/summer-shop"
+      },
+      {
+        "locale": "en-IE",
+        "url": "https://www.marksandspencer.com/ie/c/summer-shop"
+      }
+    ]
+  },
+  {
+    "categoryId": "EU_SubCategory_4776315",
+    "alternateURLs": [
+      {
+        "locale": "en-GB",
+        "url": "https://www.marksandspencer.com/l/christmas/gifts-for-pets"
+      },
+      {
+        "locale": "x-default",
+        "url": "https://www.marksandspencer.com/l/christmas/gifts-for-pets"
+      }
+    ]
+  }
+]

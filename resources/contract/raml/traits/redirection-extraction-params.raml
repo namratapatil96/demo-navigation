@@ -1,0 +1,8 @@
+#%RAML 1.0 Trait
+usage: A trait to use for redirection extraction
+queryParameters:
+      storeId:
+        description: Country to which URL redirection to be extracted
+        type: string
+        required: true
+        enum: ["UK", "IE"]

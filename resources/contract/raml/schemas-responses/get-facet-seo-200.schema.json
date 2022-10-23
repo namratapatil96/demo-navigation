@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties" : {
+    "facetDtls": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "facetType": {
+              "$ref": "../schemas-common/navigation-facet-seo.schema.json#/properties/facetType"
+            },
+            "facetValue": {
+              "$ref": "../schemas-common/navigation-facet-seo.schema.json#/properties/facetValue"
+            }
+          },
+          "required": [
+            "facetType",
+            "facetValue"
+          ]
+        }
+      ]
+    }
+  }
+}

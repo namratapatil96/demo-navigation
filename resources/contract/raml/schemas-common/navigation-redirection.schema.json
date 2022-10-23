@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "redirectUrl": {
+      "type": "string",
+      "description": "Unique identifier of category, manged by PIM",
+      "example": "SubCategory_26224992/IE_SubCategory_17873496"
+    },
+    "facetParams": {
+      "type": "array",
+      "description": "Unique identifier of category, manged by PIM",
+      "example": [{ "Colour": "Black" }]
+    }
+  },
+  "required": [
+    "redirectUrl",
+    "facetParams"
+  ]
+}

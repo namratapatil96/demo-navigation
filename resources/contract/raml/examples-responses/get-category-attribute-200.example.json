@@ -1,0 +1,301 @@
+{
+    "identifier": "SubCategory_429",
+    "name": "Dresses",
+    "isActive": "true",
+    "isPlp": "true",
+    "path": "l/women/dresses",
+    "seoDetails": {
+        "pageSeoUrl": "l/women/dresses",
+        "bannerTitle": "Dresses",
+        "pageTitle": "Women's Dresses | M&S",
+        "bannerEspotName": "SubCategory_429_PLPBANNER",
+        "navList": "MSHOME::UK WEB ROOT::WOMEN[LINK]::CLOTHING::DRESSES[LINK]::",
+        "metaDescription": "Explore our range of women’s dresses, including smart shirt styles and statement printed midis. From flowing to fitted, you’ll find your favourite at M&S",
+        "parentSeoUrl": "c/women"
+    },
+    "pageDetails": {
+        "imageLandscape": "No",
+        "pageIndex": "No",
+        "viewType": "MODEL",
+        "templateType": "NORMAL",
+        "spotlightId": "",
+        "spotlightVersion": "V1",
+        "spotlightProductCount": "10",
+        "sortBy": "",
+        "facetSEOEnabled": "Yes"
+    },
+    "breadCrumbs": [
+        {
+            "name": "Women",
+            "url": "c/women",
+            "position": 2
+        },
+        {
+            "name": "Dresses",
+            "url": "l/women/dresses",
+            "position": 3
+        }
+    ],
+    "metaData": {
+        "contentPageSpotlightId": "",
+        "contentPageSpotlightVersion": "V1"
+    },
+    "alternateURLs": [
+        {
+            "locale": "en-GB",
+            "url": "https://www.marksandspencer.com/l/women/dresses"
+        },
+        {
+            "locale": "x-default",
+            "url": "https://www.marksandspencer.com/l/women/dresses"
+        },
+        {
+            "locale": "en-IE",
+            "url": "https://www.marksandspencer.com/ie/l/women/dresses"
+        },
+        {
+            "locale": "ar-SA",
+            "url": "https://www.marksandspencer.com/sa/l/%D8%A7%D9%84%D9%86%D8%B3%D8%A7%D8%A1/%D8%A7%D9%84%D9%81%D8%B3%D8%A7%D8%AA%D9%8A%D9%86-%D9%88%D8%A7%D9%84%D8%AC%D8%A7%D9%85%D8%A8%D8%B3%D9%88%D8%AA/"
+        },
+        {
+            "locale": "en-CZ",
+            "url": "https://www.marksandspencer.com/en-cz/l/women/dresses-and-jumpsuits/"
+        },
+        {
+            "locale": "en-PL",
+            "url": "https://www.marksandspencer.com/en-pl/l/women/dresses-and-jumpsuits/"
+        },
+        {
+            "locale": "es-US",
+            "url": "https://www.marksandspencer.com/es-us/l/mujer/vestidos-y-monos/"
+        },
+        {
+            "locale": "en-DE",
+            "url": "https://www.marksandspencer.com/en-de/l/women/dresses-and-jumpsuits/"
+        },
+        {
+            "locale": "ar-BH",
+            "url": "https://www.marksandspencer.com/bh/l/%D8%A7%D9%84%D9%86%D8%B3%D8%A7%D8%A1/%D8%A7%D9%84%D9%81%D8%B3%D8%A7%D8%AA%D9%8A%D9%86-%D9%88%D8%A7%D9%84%D8%AC%D8%A7%D9%85%D8%A8%D8%B3%D9%88%D8%AA/"
+        },
+        {
+            "locale": "en-PT",
+            "url": "https://www.marksandspencer.com/pt/l/women/dresses-and-jumpsuits/"
+        },
+        {
+            "locale": "en-HK",
+            "url": "https://www.marksandspencer.com/hk/l/women/dresses-and-jumpsuits/"
+        },
+        {
+            "locale": "cs-CZ",
+            "url": "https://www.marksandspencer.com/cz/l/%C5%BEeny/%C5%A1aty-a-overaly/"
+        },
+        {
+            "locale": "en-KW",
+            "url": "https://www.marksandspencer.com/kw/l/women/dresses-and-jumpsuits/"
+        },
+        {
+            "locale": "en-GR",
+            "url": "https://www.marksandspencer.com/en-gr/l/women/dresses-and-jumpsuits/"
+        },
+        {
+            "locale": "en-CY",
+            "url": "https://www.marksandspencer.com/cy/l/women/dresses-and-jumpsuits/"
+        },
+        {
+            "locale": "ar-KW",
+            "url": "https://www.marksandspencer.com/ar-kw/l/%D8%A7%D9%84%D9%86%D8%B3%D8%A7%D8%A1/%D8%A7%D9%84%D9%81%D8%B3%D8%A7%D8%AA%D9%8A%D9%86-%D9%88%D8%A7%D9%84%D8%AC%D8%A7%D9%85%D8%A8%D8%B3%D9%88%D8%AA/"
+        },
+        {
+            "locale": "en-US",
+            "url": "https://www.marksandspencer.com/us/l/women/dresses-and-jumpsuits/"
+        },
+        {
+            "locale": "en-AE",
+            "url": "https://www.marksandspencer.com/ae/l/women/dresses-and-jumpsuits/"
+        },
+        {
+            "locale": "en-IL",
+            "url": "https://www.marksandspencer.com/il/l/women/dresses-and-jumpsuits/"
+        },
+        {
+            "locale": "en-LU",
+            "url": "https://www.marksandspencer.com/en-lu/l/women/dresses-and-jumpsuits/"
+        },
+        {
+            "locale": "ar-OM",
+            "url": "https://www.marksandspencer.com/om/l/%D8%A7%D9%84%D9%86%D8%B3%D8%A7%D8%A1/%D8%A7%D9%84%D9%81%D8%B3%D8%A7%D8%AA%D9%8A%D9%86-%D9%88%D8%A7%D9%84%D8%AC%D8%A7%D9%85%D8%A8%D8%B3%D9%88%D8%AA/"
+        },
+        {
+            "locale": "nl-NL",
+            "url": "https://www.marksandspencer.com/nl/l/dames/jurken-en-jumpsuits/"
+        },
+        {
+            "locale": "en-DK",
+            "url": "https://www.marksandspencer.com/dk/l/women/dresses-and-jumpsuits/"
+        },
+        {
+            "locale": "en-HU",
+            "url": "https://www.marksandspencer.com/hu/l/women/dresses-and-jumpsuits/"
+        },
+        {
+            "locale": "nl-BE",
+            "url": "https://www.marksandspencer.com/nl-be/l/dames/jurken-en-jumpsuits/"
+        },
+        {
+            "locale": "es-ES",
+            "url": "https://www.marksandspencer.com/es/l/mujer/vestidos-y-monos/"
+        },
+        {
+            "locale": "en-QA",
+            "url": "https://www.marksandspencer.com/qa/l/women/dresses-and-jumpsuits/"
+        },
+        {
+            "locale": "fr-LU",
+            "url": "https://www.marksandspencer.com/fr-lu/l/femme/robes-et-combinaisons/"
+        },
+        {
+            "locale": "fr-FR",
+            "url": "https://www.marksandspencer.com/fr/l/femme/robes-et-combinaisons/"
+        },
+        {
+            "locale": "de-DE",
+            "url": "https://www.marksandspencer.com/de/l/damen/kleider-and-jumpsuits/"
+        },
+        {
+            "locale": "en-NL",
+            "url": "https://www.marksandspencer.com/en-nl/l/women/dresses-and-jumpsuits/"
+        },
+        {
+            "locale": "en-JE",
+            "url": "https://www.marksandspencer.com/je/l/women/dresses-and-jumpsuits/"
+        },
+        {
+            "locale": "en-NO",
+            "url": "https://www.marksandspencer.com/no/l/women/dresses-and-jumpsuits/"
+        },
+        {
+            "locale": "en-RS",
+            "url": "https://www.marksandspencer.com/rs/l/women/dresses-and-jumpsuits/"
+        },
+        {
+            "locale": "en-BH",
+            "url": "https://www.marksandspencer.com/en-bh/l/women/dresses-and-jumpsuits/"
+        },
+        {
+            "locale": "en-JP",
+            "url": "https://www.marksandspencer.com/jp/l/women/dresses-and-jumpsuits/"
+        },
+        {
+            "locale": "en-BE",
+            "url": "https://www.marksandspencer.com/en-be/l/women/dresses-and-jumpsuits/"
+        },
+        {
+            "locale": "en-FI",
+            "url": "https://www.marksandspencer.com/fi/l/women/dresses-and-jumpsuits/"
+        },
+        {
+            "locale": "en-ES",
+            "url": "https://www.marksandspencer.com/en-es/l/women/dresses-and-jumpsuits/"
+        },
+        {
+            "locale": "el-GR",
+            "url": "https://www.marksandspencer.com/gr/l/%CE%B3%CF%85%CE%BD%CE%B1%CE%B9%CE%BA%CE%B5%CE%AF%CE%B1/%CF%86%CE%BF%CF%81%CE%AD%CE%BC%CE%B1%CF%84%CE%B1%2F%CE%BF%CE%BB%CF%8C%CF%83%CF%89%CE%BC%CE%B5%CF%82-%CF%86%CF%8C%CF%81%CE%BC%CE%B5%CF%82/"
+        },
+        {
+            "locale": "en-MY",
+            "url": "https://www.marksandspencer.com/my/l/women/dresses-and-jumpsuits/"
+        },
+        {
+            "locale": "en-AL",
+            "url": "https://www.marksandspencer.com/al/l/women/dresses-and-jumpsuits/"
+        },
+        {
+            "locale": "en-IT",
+            "url": "https://www.marksandspencer.com/it/l/women/dresses-and-jumpsuits/"
+        },
+        {
+            "locale": "en-MX",
+            "url": "https://www.marksandspencer.com/en-mx/l/women/dresses-and-jumpsuits/"
+        },
+        {
+            "locale": "fr-CA",
+            "url": "https://www.marksandspencer.com/fr-ca/l/femme/robes-et-combinaisons/"
+        },
+        {
+            "locale": "fr-CH",
+            "url": "https://www.marksandspencer.com/fr-ch/l/femme/robes-et-combinaisons/"
+        },
+        {
+            "locale": "en-AU",
+            "url": "https://www.marksandspencer.com/au/l/women/dresses-and-jumpsuits/"
+        },
+        {
+            "locale": "en-AT",
+            "url": "https://www.marksandspencer.com/en-at/l/women/dresses-and-jumpsuits/"
+        },
+        {
+            "locale": "en-CA",
+            "url": "https://www.marksandspencer.com/ca/l/women/dresses-and-jumpsuits/"
+        },
+        {
+            "locale": "en-OM",
+            "url": "https://www.marksandspencer.com/en-om/l/women/dresses-and-jumpsuits/"
+        },
+        {
+            "locale": "ar-AE",
+            "url": "https://www.marksandspencer.com/ar-ae/l/%D8%A7%D9%84%D9%86%D8%B3%D8%A7%D8%A1/%D8%A7%D9%84%D9%81%D8%B3%D8%A7%D8%AA%D9%8A%D9%86-%D9%88%D8%A7%D9%84%D8%AC%D8%A7%D9%85%D8%A8%D8%B3%D9%88%D8%AA/"
+        },
+        {
+            "locale": "en-CH",
+            "url": "https://www.marksandspencer.com/ch/l/women/dresses-and-jumpsuits/"
+        },
+        {
+            "locale": "en-SA",
+            "url": "https://www.marksandspencer.com/en-sa/l/women/dresses-and-jumpsuits/"
+        },
+        {
+            "locale": "de-AT",
+            "url": "https://www.marksandspencer.com/at/l/damen/kleider-and-jumpsuits/"
+        },
+        {
+            "locale": "en-BN",
+            "url": "https://www.marksandspencer.com/bn/l/women/dresses-and-jumpsuits/"
+        },
+        {
+            "locale": "en-FR",
+            "url": "https://www.marksandspencer.com/en-fr/l/women/dresses-and-jumpsuits/"
+        },
+        {
+            "locale": "en-NZ",
+            "url": "https://www.marksandspencer.com/nz/l/women/dresses-and-jumpsuits/"
+        },
+        {
+            "locale": "en-SE",
+            "url": "https://www.marksandspencer.com/se/l/women/dresses-and-jumpsuits/"
+        },
+        {
+            "locale": "fr-BE",
+            "url": "https://www.marksandspencer.com/fr-be/l/femme/robes-et-combinaisons/"
+        },
+        {
+            "locale": "ar-QA",
+            "url": "https://www.marksandspencer.com/ar-qa/l/%D8%A7%D9%84%D9%86%D8%B3%D8%A7%D8%A1/%D8%A7%D9%84%D9%81%D8%B3%D8%A7%D8%AA%D9%8A%D9%86-%D9%88%D8%A7%D9%84%D8%AC%D8%A7%D9%85%D8%A8%D8%B3%D9%88%D8%AA/"
+        },
+        {
+            "locale": "en-SG",
+            "url": "https://www.marksandspencer.com/sg/l/women/dresses-and-jumpsuits/"
+        },
+        {
+            "locale": "en-GB",
+            "url": "https://www.marksandspencer.com/l/women/dresses"
+        },
+        {
+            "locale": "x-default",
+            "url": "https://www.marksandspencer.com/l/women/dresses"
+        },
+        {
+            "locale": "en-IE",
+            "url": "https://www.marksandspencer.com/ie/l/women/dresses"
+        }
+    ]
+}

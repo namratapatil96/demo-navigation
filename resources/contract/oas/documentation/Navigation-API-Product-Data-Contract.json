@@ -1,0 +1,426 @@
+{
+    "swagger": "2.0",
+    "info": {
+      "description": "Providing navigational services for .COM platform",
+      "version": "1.0",
+      "title": "Navigation Product API Documentation"
+    },
+    "host": "localhost:8080",
+    "basePath": "/",
+    "tags
+    ": [
+      {
+        "name": "International",
+        "description": "Product Locale Lookup Controller"
+      },
+      {
+        "name": "Product Lookup",
+        "description": "Product Hierarchy/Details Lookup Service"
+      },
+      {
+        "name": "Product Redirect Lookup",
+        "description": "Product & Redirection Details Lookup Service"
+      }
+    ],
+    "paths": {
+      "/nav-product/v1/international/products": {
+        "get": {
+          "tags": [
+            "International"
+          ],
+          "summary": "getProductMappingDetails",
+          "operationId": "getProductMappingDetailsUsingGET",
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "name": "page",
+              "in": "query",
+              "description": "page",
+              "required": false,
+              "type": "integer",
+              "default": 0,
+              "format": "int32"
+            },
+            {
+              "name": "size",
+              "in": "query",
+              "description": "size",
+              "required": false,
+              "type": "integer",
+              "default": 100,
+              "format": "int32"
+            },
+            {
+              "name": "storeId",
+              "in": "query",
+              "description": "storeId",
+              "required": true,
+              "type": "string",
+              "default": "EU",
+              "enum": [
+                "EU",
+                "IE",
+                "UK"
+              ]
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "OK",
+              "schema": {
+                "type": "object",
+                "additionalProperties": {
+                  "type": "object"
+                }
+              }
+            },
+            "401": {
+              "description": "Unauthorized"
+            },
+            "403": {
+              "description": "Forbidden"
+            },
+            "404": {
+              "description": "Not Found"
+            }
+          }
+        }
+      },
+      "/nav-product/v1/product/seo": {
+        "get": {
+          "tags": [
+            "Product Lookup"
+          ],
+          "summary": "Get product SEO details for the given product ids\n",
+          "operationId": "getProductSeoDetailsUsingGET",
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "name": "correlationId",
+              "in": "header",
+              "description": "correlationId",
+              "required": false,
+              "type": "string",
+              "default": "Blank"
+            },
+            {
+              "name": "productIds",
+              "in": "query",
+              "description": "productIds",
+              "required": true,
+              "type": "string"
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Success",
+              "schema": {
+                "$ref": "#/definitions/ProductSeoDetails"
+              }
+            },
+            "400": {
+              "description": "Bad Request"
+            },
+            "401": {
+              "description": "Unauthorized"
+            },
+            "403": {
+              "description": "Forbidden"
+            },
+            "404": {
+              "description": "Product Seo details does not exist for the given productId"
+            },
+            "500": {
+              "description": "Unable to get seo details for the given product id"
+            }
+          }
+        }
+      },
+      "/nav-product/v1/product/seo/redirect": {
+        "get": {
+          "tags": [
+            "Product Redirect Lookup"
+          ],
+          "summary": "getProductAndRedirectDetails",
+          "operationId": "getProductAndRedirectDetailsUsingGET",
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "name": "seoUrl",
+              "in": "query",
+              "description": "seoUrl",
+              "required": true,
+              "type": "string"
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "OK",
+              "schema": {
+                "type": "object"
+              }
+            },
+            "401": {
+              "description": "Unauthorized"
+            },
+            "403": {
+              "description": "Forbidden"
+            },
+            "404": {
+              "description": "Not Found"
+            }
+          }
+        }
+      },
+      "/nav-product/v1/sales/{productExternalId}": {
+        "get": {
+          "tags": [
+            "Product Lookup"
+          ],
+          "summary": "Get product details with sales hierarchy for the given product id\n",
+          "operationId": "getSalesHierarchiesByProductIdUsingGET",
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "name": "correlationId",
+              "in": "header",
+              "description": "correlationId",
+              "required": false,
+              "type": "string",
+              "default": "Blank"
+            },
+            {
+              "name": "productExternalId",
+              "in": "path",
+              "description": "Product External Identifier",
+              "required": true,
+              "type": "string"
+            },
+            {
+              "name": "storeId",
+              "in": "query",
+              "description": "Store Identifier(If no value provided then no store categories will be filters",
+              "required": false,
+              "type": "string",
+              "enum": [
+                "CFTO",
+                "IE",
+                "IECFTO",
+                "UK"
+              ]
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Success",
+              "schema": {
+                "$ref": "#/definitions/ProductAndSalesHierarchy"
+              }
+            },
+            "400": {
+              "description": "Bad Request"
+            },
+            "401": {
+              "description": "Unauthorized"
+            },
+            "403": {
+              "description": "Forbidden"
+            },
+            "404": {
+              "description": "Product details does not exist for the given productId"
+            },
+            "500": {
+              "description": "Unable to get sales hierarchies for the given product id"
+            }
+          }
+        }
+      }
+    },
+    "definitions": {
+      "CategoryBasicInfo": {
+        "type": "object",
+        "properties": {
+          "deleted": {
+            "type": "boolean"
+          },
+          "id": {
+            "type": "string"
+          },
+          "masterCategory": {
+            "type": "string"
+          },
+          "metadata": {
+            "$ref": "#/definitions/Metadata"
+          },
+          "name": {
+            "type": "string"
+          },
+         "seoURL": {
+            "type": "string"
+          },
+          "storeId": {
+            "type": "string"
+          }
+        },
+        "title": "CategoryBasicInfo"
+      },
+      "ClassificationReference": {
+        "type": "object",
+        "properties": {
+          "classificationId": {
+            "type": "string"
+          },
+          "metaData": {
+            "type": "array",
+            "items": {
+              "$ref": "#/definitions/Value"
+            }
+          },
+          "type": {
+            "type": "string"
+          }
+        },
+        "title": "ClassificationReference"
+      },
+      "LocaleUrl": {
+        "type": "object",
+        "properties": {
+          "locale": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string"
+          }
+        },
+        "title": "LocaleUrl"
+      },
+      "Metadata": {
+        "type": "object",
+        "properties": {
+          "imageLandscape": {
+            "type": "string"
+          },
+          "isHidden": {
+            "type": "string"
+          },
+          "viewType": {
+            "type": "string"
+          }
+        },
+        "title": "Metadata"
+      },
+      "ProductAndSalesHierarchy": {
+        "type": "object",
+        "properties": {
+          "alternateURLs": {
+            "type": "array",
+            "items": {
+              "$ref": "#/definitions/LocaleUrl"
+            }
+          },
+          "categoryList": {
+            "type": "array",
+            "items": {
+              "$ref": "#/definitions/CategoryBasicInfo"
+            }
+          },
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "productExternalId": {
+            "type": "string"
+          },
+          "seoURL": {
+            "type": "string"
+          }
+        },
+        "title": "ProductAndSalesHierarchy"
+      },
+      "ProductClassificationReference": {
+        "type": "object",
+        "properties": {
+          "categoryList": {
+            "type": "array",
+            "items": {
+              "$ref": "#/definitions/CategoryBasicInfo"
+            }
+          },
+          "classificationReference": {
+            "type": "array",
+            "items": {
+              "$ref": "#/definitions/ClassificationReference"
+            }
+          },
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "productExternalId": {
+            "type": "string"
+          },
+          "seoURL": {
+            "type": "string"
+          }
+        },
+        "title": "ProductClassificationReference"
+      },
+      "ProductSeoDetails": {
+        "type": "object",
+        "properties": {
+          "productSeoDetails": {
+            "type": "array",
+            "items": {
+              "$ref": "#/definitions/ProductClassificationReference"
+            }
+          }
+        },
+        "title": "ProductSeoDetails"
+      },
+      "Value": {
+        "type": "object",
+        "properties": {
+          "attributeID": {
+            "type": "string"
+          },
+          "content": {
+            "type": "string"
+          },
+          "derived": {
+            "type": "string"
+          },
+          "derivedContextID": {
+            "type": "string"
+          },
+          "id": {
+            "type": "string"
+          },
+          "inherited": {
+            "type": "string"
+          },
+          "inheritedFrom": {
+            "type": "string"
+          },
+          "qualifierID": {
+            "type": "string"
+          },
+          "unitID": {
+            "type": "string"
+          }
+        },
+        "title": "Value"
+      }
+    }
+  }

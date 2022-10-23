@@ -1,0 +1,34 @@
+{
+  "facetDtls": [
+    {
+      "facetType": "Colour",
+      "facetValue": [
+        {
+          "facetName": "Metallics All Beauty",
+          "facetSeoUrl": "l/beauty/all-beauty/fs5/metallics"
+        },
+        {
+          "facetName": "Gold All Beauty",
+          "facetSeoUrl": "l/beauty/all-beauty/fs5/gold"
+        },
+        {
+          "facetName": "Green All Beauty",
+          "facetSeoUrl": "l/beauty/all-beauty/fs5/green"
+        }
+      ]
+    },
+    {
+      "facetType": "Diet Suitability",
+      "facetValue": [
+        {
+          "facetName": "Suitable for Vegetarians All Beauty",
+          "facetSeoUrl": "l/beauty/all-beauty/fs5/suitable-for-vegetarians"
+        },
+        {
+          "facetName": "Suitable for Vegans All Beauty",
+          "facetSeoUrl": "l/beauty/all-beauty/fs5/suitable-for-vegans"
+        }
+      ]
+    }
+  ]
+}

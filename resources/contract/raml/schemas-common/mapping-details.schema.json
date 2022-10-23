@@ -1,0 +1,83 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "definitions": {
+    "identifier": {
+      "type": "string",
+      "description": "Unique identifier of category. Mapping STEP-ProductInformation/Classifications/Classification/attr=ID",
+      "example": "EU_SubCategory_4776368,SubCategory_4140264,IE_SubCategory_19669949"
+    },
+    "alternateURLs": {
+      "definitions": {
+        "locale": {
+          "type": "string",
+          "description": "Locale code of HREF url",
+          "example": "en-GB, x-default, en-IE, en-DE, etc"
+        },
+        "alt-url": {
+          "type": "string",
+          "description": "HREF alternative URL appended with M&S domain",
+          "example": "https://www.marksandspencer.com/l/christmas/luxury-gifts"
+        }
+      }
+    },
+    "pageNumber": {
+      "type": "integer",
+      "description": "The current page number",
+      "example": 1
+    },
+    "totalPages": {
+      "type": "integer",
+      "description": "Total number of pages available for the requests",
+      "example": 169
+    },
+    "pageSize": {
+      "type": "integer",
+      "description": "Total number of the product mappings in the given response",
+      "example": 100
+    },
+    "totalElements": {
+      "type": "integer",
+      "description": "Total number of product mapping available",
+      "example": 3379
+    }
+  },
+  "properties": {
+    "identifier": {
+      "type": "string",
+      "$ref": "#/definitions/identifier"
+    },
+    "alternateURLs": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "locale": {
+              "$ref": "#/definitions/alternateURLs/definitions/locale"
+            },
+            "url": {
+              "$ref": "#/definitions/alternateURLs/definitions/alt-url"
+            }
+          },
+          "required": [
+            "locale",
+            "url"
+          ]
+        }
+      ]
+    },
+    "pageNumber": {
+      "ref": "#/definitions/pageNumber"
+    },
+    "totalPages": {
+      "ref": "#/definitions/totalPages"
+    },
+    "pageSize": {
+      "ref": "#/definitions/pageSize"
+    },
+    "totalElements": {
+      "ref": "#/definitions/totalElements"
+    }
+  }
+}

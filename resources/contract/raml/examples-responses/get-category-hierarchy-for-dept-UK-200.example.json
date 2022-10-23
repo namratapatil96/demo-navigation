@@ -1,0 +1,67 @@
+[
+  {
+    "_id": "SC_Level_1_586",
+    "name": "Men",
+    "seoURL": "c/men",
+    "storeId": "UK",
+    "isChildExist": true,
+    "childCategories": [
+      {
+        "_id": "SubCategory_1305902",
+        "name": "Clothing",
+        "seoURL": "",
+        "storeId": "UK",
+        "isChildExist": true,
+        "childCategories": []
+      },
+      {
+        "_id": "SubCategory_14583299",
+        "name": "Essentials",
+        "seoURL": "",
+        "storeId": "UK",
+        "isChildExist": true,
+        "childCategories": []
+      },
+      {
+        "_id": "SubCategory_26055659",
+        "name": "Men's Accessories",
+        "seoURL": "l/men/mens-accessories",
+        "storeId": "UK",
+        "isChildExist": true,
+        "childCategories": []
+      },
+      {
+        "_id": "SubCategory_26224918",
+        "name": "Men's Clothing",
+        "seoURL": "",
+        "storeId": "UK",
+        "isChildExist": true,
+        "childCategories": []
+      },
+      {
+        "_id": "SubCategory_26138709",
+        "name": "Men's Essentials",
+        "seoURL": "",
+        "storeId": "UK",
+        "isChildExist": true,
+        "childCategories": []
+      },
+      {
+        "_id": "SubCategory_25977185",
+        "name": "Men's Shoes",
+        "seoURL": "l/men/mens-shoes",
+        "storeId": "UK",
+        "isChildExist": true,
+        "childCategories": []
+      },
+      {
+        "_id": "SubCategory_646180",
+        "name": "Suits & Tailoring",
+        "seoURL": "",
+        "storeId": "UK",
+        "isChildExist": true,
+        "childCategories": []
+      }
+    ]
+  }
+]

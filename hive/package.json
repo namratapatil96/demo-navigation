@@ -1,0 +1,23 @@
+{
+  "name": "navigation-api-hive",
+  "version": "0.0.1",
+  "description": "The Navigation API service Hive schema break checks",
+  "repository" : "https://github.com/DigitalInnovation/dotcom-api-navigation",
+  "engines": {
+    "npm": "please-use-yarn",
+    "node": ">=v16.13.2",
+    "yarn": ">= 1.22.10"
+  },
+  "dependencies": {
+    "@graphql-hive/cli": "0.12.0",
+    "@graphql-mesh/cli": "0.66.0",
+    "@graphql-mesh/new-openapi": "0.4.12",
+    "graphql": "16.3.0"
+  },
+
+  "scripts": {
+    "build": "mesh build --fileType=json",
+    "schema:check": "hive schema:check ./.mesh/sources/NavigationCategories/schema.graphql --token $HIVE_CATEGORY_TOKEN",
+    "schema:publish": "hive schema:publish ./.mesh/sources/NavigationCategories/schema.graphql --metadata \"./.mesh/sources/NavigationCategories/jsonSchemaBundle.json\" --token $HIVE_CATEGORY_TOKEN --force"
+  }
+}

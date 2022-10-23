@@ -1,0 +1,67 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "$id": "#/ProductSeoDetails",
+  "title": "The root schema for Product SEO details Response",
+  "type": "object",
+  "description": "The root schema comprises the entire JSON schema of Product SEO details Response Type.",
+  "examples": [
+    { "$ref": "../examples-responses/get-product-seo-dtl-200.example.json" }
+  ],
+  "required": [
+    "productSeoDetails"
+  ],
+  "properties": {
+    "productSeoDetails": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "$id": "#/properties/id",
+              "type": "string",
+              "title": "Product ID",
+              "description": "Unique identifier of the product",
+              "examples": [
+                "T42-6976P-201811"
+              ]
+            },
+            "name": {
+              "$id": "#/properties/name",
+              "type": "string",
+              "title": "Product name",
+              "description": "Full description of the product name",
+              "examples": [
+                "PETITE Twisted Front Fit & Flare Midi Dress"
+              ]
+            },
+            "productExternalId": {
+              "$id": "#/properties/productExternalId",
+              "type": "string",
+              "title": "Product External ID",
+              "description": "External identifier of product for reference",
+              "examples": [
+                "P60263304"
+              ]
+            },
+            "seoURL": {
+              "$id": "#/properties/seoURL",
+              "type": "string",
+              "title": "Product SEO Url",
+              "description": "SEO Friendly Url of the Product",
+              "examples": [
+                "petite-twisted-front-fit-and-flare-midi-dress/p/clp60263304"
+              ]
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "productExternalId",
+            "seoURL"
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "definitions": {
+    "facetSeoUrl": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Facet URL received as part of request attribute seoURL",
+      "example": "l/kids/baby/fs5/boys:unisex?maxparcount=true"
+    },
+    "facetId": {
+      "type": "string",
+      "description": "Facet Type for the requested input",
+      "example": "ProductType, Size, Gender"
+    },
+    "facetName": {
+      "type": "string",
+      "description": "Name of the Facet.",
+      "example": "T-shirt, Tops, Vests, Blue, Green , Yellow"
+    },
+    "isSelected": {
+      "type": "boolean",
+      "description": "Attribute value to check if the facet is selected and needs to be appended in URL",
+      "example": "true/false"
+    },
+    "isDisabled": {
+      "type": "boolean",
+      "description": "Attribute value to check if the facet is disabled, if true need not be added to the URL",
+      "example": "true/false"
+    }
+  },
+  "properties": {
+    "pageSeoUrl": {
+      "$ref": "../schemas-common/navigation-category.schema.json#/definitions/seoDetails/definitions/pageSeoUrl"
+    },
+    "facetSeoUrl": {
+      "$ref": "#/definitions/facetSeoUrl"
+    },
+    "facetFields": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "$ref": "#/definitions/facetId"
+        },
+        "data": {
+          "type": "array",
+          "properties": {
+            "name": {
+              "$ref": "#/definitions/facetName"
+            },
+            "selected": {
+              "$ref": "#/definitions/isSelected"
+            },
+            "disabled": {
+              "$ref": "#/definitions/isDisabled"
+            },
+            "facetSeoUrl": {
+              "$ref": "#/definitions/facetSeoUrl"
+            }
+          }
+        }
+      }
+    }
+  },
+  "required": [
+    "pageSeoUrl",
+    "facetSeoUrl",
+    "facetFields"
+  ]
+}

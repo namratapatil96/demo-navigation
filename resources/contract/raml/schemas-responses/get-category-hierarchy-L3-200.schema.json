@@ -1,0 +1,71 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "type": "array",
+    "items": {
+        "$ref": "#/definitions/L3Child"
+    },
+    "definitions": {
+        "L3Child": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "_id": {
+                  "$ref": "../schemas-common/navigation-category-hierarchy.schema.json#/properties/identifier"
+                },
+                "name": {
+                  "$ref": "../schemas-common/navigation-category-hierarchy.schema.json#/properties/name"
+                },
+                "seoURL": {
+                  "$ref": "../schemas-common/navigation-category-hierarchy.schema.json#/properties/seoURL"
+                },
+                "storeId": {
+                  "$ref": "../schemas-common/navigation-category-hierarchy.schema.json#/properties/storeId"
+                },
+                "childCategories": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/ChildCategory"
+                    }
+                }
+            },
+            "required": [
+                "_id",
+                "childCategories",
+                "name",
+                "seoURL",
+                "storeId"
+            ],
+            "title": "L3Child"
+        },
+        "ChildCategory": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "_id": {
+                  "$ref": "../schemas-common/navigation-category-hierarchy.schema.json#/properties/identifier"
+                },
+                "name": {
+                  "$ref": "../schemas-common/navigation-category-hierarchy.schema.json#/properties/name"
+                },
+                "seoURL": {
+                  "$ref": "../schemas-common/navigation-category-hierarchy.schema.json#/properties/seoURL"
+                },
+                "storeId": {
+                  "$ref": "../schemas-common/navigation-category-hierarchy.schema.json#/properties/storeId"
+                },
+                "childCategories": {
+                    "type": "array",
+                    "items": {}
+                }
+            },
+            "required": [
+                "_id",
+                "childCategories",
+                "name",
+                "seoURL",
+                "storeId"
+            ],
+            "title": "ChildCategory"
+        }
+    }
+}

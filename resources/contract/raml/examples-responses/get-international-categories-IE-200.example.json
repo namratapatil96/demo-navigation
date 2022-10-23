@@ -1,0 +1,448 @@
+[
+  {
+    "categoryId": "IE_SubCategory_22551064",
+    "alternateURLs": [
+      {
+        "locale": "en-GB",
+        "url": "https://www.marksandspencer.com/l/autumn-fashion/kids"
+      },
+      {
+        "locale": "x-default",
+        "url": "https://www.marksandspencer.com/l/autumn-fashion/kids"
+      }
+    ]
+  },
+  {
+    "categoryId": "IE_SubCategory_24998416",
+    "alternateURLs": [
+      {
+        "locale": "en-GB",
+        "url": "https://www.marksandspencer.com/c/summer-shop"
+      },
+      {
+        "locale": "x-default",
+        "url": "https://www.marksandspencer.com/c/summer-shop"
+      },
+      {
+        "locale": "en-TN",
+        "url": "https://www.marksandspencer.com/tn/l/collections/summer-style/"
+      },
+      {
+        "locale": "en-CZ",
+        "url": "https://www.marksandspencer.com/en-cz/l/collections/summer-style/"
+      },
+      {
+        "locale": "es-US",
+        "url": "https://www.marksandspencer.com/es-us/l/colecciones/estilos-veraniegos/"
+      },
+      {
+        "locale": "en-DE",
+        "url": "https://www.marksandspencer.com/en-de/l/collections/summer-style/"
+      },
+      {
+        "locale": "en-TT",
+        "url": "https://www.marksandspencer.com/tt/l/collections/summer-style/"
+      },
+      {
+        "locale": "en-LK",
+        "url": "https://www.marksandspencer.com/lk/l/collections/summer-style/"
+      },
+      {
+        "locale": "en-TW",
+        "url": "https://www.marksandspencer.com/tw/l/collections/summer-style/"
+      },
+      {
+        "locale": "cs-CZ",
+        "url": "https://www.marksandspencer.com/cz/l/kolekce/letn%C3%AD-styl/"
+      },
+      {
+        "locale": "en-CL",
+        "url": "https://www.marksandspencer.com/cl/l/collections/summer-style/"
+      },
+      {
+        "locale": "en-KR",
+        "url": "https://www.marksandspencer.com/kr/l/collections/summer-style/"
+      },
+      {
+        "locale": "en-CO",
+        "url": "https://www.marksandspencer.com/co/l/collections/summer-style/"
+      },
+      {
+        "locale": "en-KW",
+        "url": "https://www.marksandspencer.com/kw/l/collections/summer-style/"
+      },
+      {
+        "locale": "en-CR",
+        "url": "https://www.marksandspencer.com/cr/l/collections/summer-style/"
+      },
+      {
+        "locale": "en-CY",
+        "url": "https://www.marksandspencer.com/cy/l/collections/summer-style/"
+      },
+      {
+        "locale": "en-MD",
+        "url": "https://www.marksandspencer.com/md/l/collections/summer-style/"
+      },
+      {
+        "locale": "en-EC",
+        "url": "https://www.marksandspencer.com/ec/l/collections/summer-style/"
+      },
+      {
+        "locale": "en-MK",
+        "url": "https://www.marksandspencer.com/mk/l/collections/summer-style/"
+      },
+      {
+        "locale": "en-US",
+        "url": "https://www.marksandspencer.com/us/l/collections/summer-style/"
+      },
+      {
+        "locale": "en-MN",
+        "url": "https://www.marksandspencer.com/mn/l/collections/summer-style/"
+      },
+      {
+        "locale": "en-EE",
+        "url": "https://www.marksandspencer.com/ee/l/collections/summer-style/"
+      },
+      {
+        "locale": "en-MM",
+        "url": "https://www.marksandspencer.com/mm/l/collections/summer-style/"
+      },
+      {
+        "locale": "en-UZ",
+        "url": "https://www.marksandspencer.com/uz/l/collections/summer-style/"
+      },
+      {
+        "locale": "en-UY",
+        "url": "https://www.marksandspencer.com/uy/l/collections/summer-style/"
+      },
+      {
+        "locale": "en-LV",
+        "url": "https://www.marksandspencer.com/lv/l/collections/summer-style/"
+      },
+      {
+        "locale": "en-LU",
+        "url": "https://www.marksandspencer.com/en-lu/l/collections/summer-style/"
+      },
+      {
+        "locale": "en-LT",
+        "url": "https://www.marksandspencer.com/lt/l/collections/summer-style/"
+      },
+      {
+        "locale": "ar-OM",
+        "url": "https://www.marksandspencer.com/om/l/%D8%A7%D9%84%D8%AA%D8%B4%D9%83%D9%8A%D9%84%D8%A7%D8%AA/%D8%AA%D8%B5%D9%85%D9%8A%D9%85%D8%A7%D8%AA-%D8%B5%D9%8A%D9%81%D9%8A%D8%A9/"
+      },
+      {
+        "locale": "en-DK",
+        "url": "https://www.marksandspencer.com/dk/l/collections/summer-style/"
+      },
+      {
+        "locale": "nl-BE",
+        "url": "https://www.marksandspencer.com/nl-be/l/collecties/zomerstijl/"
+      },
+      {
+        "locale": "en-DO",
+        "url": "https://www.marksandspencer.com/do/l/collections/summer-style/"
+      },
+      {
+        "locale": "es-ES",
+        "url": "https://www.marksandspencer.com/es/l/colecciones/estilos-veraniegos/"
+      },
+      {
+        "locale": "fr-LU",
+        "url": "https://www.marksandspencer.com/fr-lu/l/collections/style-estival/"
+      },
+      {
+        "locale": "en-JE",
+        "url": "https://www.marksandspencer.com/je/l/collections/summer-style/"
+      },
+      {
+        "locale": "en-RS",
+        "url": "https://www.marksandspencer.com/rs/l/collections/summer-style/"
+      },
+      {
+        "locale": "en-BB",
+        "url": "https://www.marksandspencer.com/bb/l/collections/summer-style/"
+      },
+      {
+        "locale": "en-BA",
+        "url": "https://www.marksandspencer.com/ba/l/collections/summer-style/"
+      },
+      {
+        "locale": "en-BH",
+        "url": "https://www.marksandspencer.com/en-bh/l/collections/summer-style/"
+      },
+      {
+        "locale": "en-JP",
+        "url": "https://www.marksandspencer.com/jp/l/collections/summer-style/"
+      },
+      {
+        "locale": "en-BG",
+        "url": "https://www.marksandspencer.com/bg/l/collections/summer-style/"
+      },
+      {
+        "locale": "en-JO",
+        "url": "https://www.marksandspencer.com/jo/l/collections/summer-style/"
+      },
+      {
+        "locale": "en-BE",
+        "url": "https://www.marksandspencer.com/be/l/collections/summer-style/"
+      },
+      {
+        "locale": "en-JM",
+        "url": "https://www.marksandspencer.com/jm/l/collections/summer-style/"
+      },
+      {
+        "locale": "en-IS",
+        "url": "https://www.marksandspencer.com/is/l/collections/summer-style/"
+      },
+      {
+        "locale": "el-GR",
+        "url": "https://www.marksandspencer.com/gr/l/%CF%83%CF%85%CE%BB%CE%BB%CE%BF%CE%B3%CE%AD%CF%82/%CE%BA%CE%B1%CE%BB%CE%BF%CE%BA%CE%B1%CE%B9%CF%81%CE%B9%CE%BD%CF%8C-%CF%83%CF%84%CF%85%CE%BB/"
+      },
+      {
+        "locale": "en-AL",
+        "url": "https://www.marksandspencer.com/al/l/collections/summer-style/"
+      },
+      {
+        "locale": "en-IT",
+        "url": "https://www.marksandspencer.com/it/l/collections/summer-style/"
+      },
+      {
+        "locale": "fr-CA",
+        "url": "https://www.marksandspencer.com/fr-ca/l/collections/style-estival/"
+      },
+      {
+        "locale": "fr-CH",
+        "url": "https://www.marksandspencer.com/fr-ch/l/collections/style-estival/"
+      },
+      {
+        "locale": "en-AR",
+        "url": "https://www.marksandspencer.com/ar/l/collections/summer-style/"
+      },
+      {
+        "locale": "en-AU",
+        "url": "https://www.marksandspencer.com/au/l/collections/summer-style/"
+      },
+      {
+        "locale": "en-AT",
+        "url": "https://www.marksandspencer.com/en-at/l/collections/summer-style/"
+      },
+      {
+        "locale": "en-SK",
+        "url": "https://www.marksandspencer.com/sk/l/collections/summer-style/"
+      },
+      {
+        "locale": "en-BY",
+        "url": "https://www.marksandspencer.com/by/l/collections/summer-style/"
+      },
+      {
+        "locale": "en-CA",
+        "url": "https://www.marksandspencer.com/ca/l/collections/summer-style/"
+      },
+      {
+        "locale": "en-KH",
+        "url": "https://www.marksandspencer.com/kh/l/collections/summer-style/"
+      },
+      {
+        "locale": "ar-AE",
+        "url": "https://www.marksandspencer.com/ar-ae/l/%D8%A7%D9%84%D8%AA%D8%B4%D9%83%D9%8A%D9%84%D8%A7%D8%AA/%D8%AA%D8%B5%D9%85%D9%8A%D9%85%D8%A7%D8%AA-%D8%B5%D9%8A%D9%81%D9%8A%D8%A9/"
+      },
+      {
+        "locale": "en-CI",
+        "url": "https://www.marksandspencer.com/en-ci/l/collections/summer-style/"
+      },
+      {
+        "locale": "en-CH",
+        "url": "https://www.marksandspencer.com/ch/l/collections/summer-style/"
+      },
+      {
+        "locale": "en-SA",
+        "url": "https://www.marksandspencer.com/en-sa/l/collections/summer-style/"
+      },
+      {
+        "locale": "en-BO",
+        "url": "https://www.marksandspencer.com/bo/l/collections/summer-style/"
+      },
+      {
+        "locale": "de-AT",
+        "url": "https://www.marksandspencer.com/at/l/kollektionen/sommerstyle/"
+      },
+      {
+        "locale": "en-BN",
+        "url": "https://www.marksandspencer.com/bn/l/collections/summer-style/"
+      },
+      {
+        "locale": "en-SE",
+        "url": "https://www.marksandspencer.com/se/l/collections/summer-style/"
+      },
+      {
+        "locale": "en-BS",
+        "url": "https://www.marksandspencer.com/bs/l/collections/summer-style/"
+      },
+      {
+        "locale": "en-BR",
+        "url": "https://www.marksandspencer.com/br/l/collections/summer-style/"
+      },
+      {
+        "locale": "fr-BE",
+        "url": "https://www.marksandspencer.com/fr-be/l/collections/style-estival/"
+      },
+      {
+        "locale": "en-SI",
+        "url": "https://www.marksandspencer.com/si/l/collections/summer-style/"
+      },
+      {
+        "locale": "en-SG",
+        "url": "https://www.marksandspencer.com/sg/l/collections/summer-style/"
+      },
+      {
+        "locale": "ar-SA",
+        "url": "https://www.marksandspencer.com/sa/l/%D8%A7%D9%84%D8%AA%D8%B4%D9%83%D9%8A%D9%84%D8%A7%D8%AA/%D8%AA%D8%B5%D9%85%D9%8A%D9%85%D8%A7%D8%AA-%D8%B5%D9%8A%D9%81%D9%8A%D8%A9/"
+      },
+      {
+        "locale": "en-PL",
+        "url": "https://www.marksandspencer.com/en-pl/l/collections/summer-style/"
+      },
+      {
+        "locale": "en-PK",
+        "url": "https://www.marksandspencer.com/pk/l/collections/summer-style/"
+      },
+      {
+        "locale": "ar-BH",
+        "url": "https://www.marksandspencer.com/bh/l/%D8%A7%D9%84%D8%AA%D8%B4%D9%83%D9%8A%D9%84%D8%A7%D8%AA/%D8%AA%D8%B5%D9%85%D9%8A%D9%85%D8%A7%D8%AA-%D8%B5%D9%8A%D9%81%D9%8A%D8%A9/"
+      },
+      {
+        "locale": "en-PT",
+        "url": "https://www.marksandspencer.com/pt/l/collections/summer-style/"
+      },
+      {
+        "locale": "en-HK",
+        "url": "https://www.marksandspencer.com/hk/l/collections/summer-style/"
+      },
+      {
+        "locale": "en-GT",
+        "url": "https://www.marksandspencer.com/gt/l/collections/summer-style/"
+      },
+      {
+        "locale": "en-GR",
+        "url": "https://www.marksandspencer.com/en-gr/l/collections/summer-style/"
+      },
+      {
+        "locale": "en-PA",
+        "url": "https://www.marksandspencer.com/pa/l/collections/summer-style/"
+      },
+      {
+        "locale": "en-PE",
+        "url": "https://www.marksandspencer.com/pe/l/collections/summer-style/"
+      },
+      {
+        "locale": "ar-KW",
+        "url": "https://www.marksandspencer.com/ar-kw/l/%D8%A7%D9%84%D8%AA%D8%B4%D9%83%D9%8A%D9%84%D8%A7%D8%AA/%D8%AA%D8%B5%D9%85%D9%8A%D9%85%D8%A7%D8%AA-%D8%B5%D9%8A%D9%81%D9%8A%D8%A9/"
+      },
+      {
+        "locale": "en-AE",
+        "url": "https://www.marksandspencer.com/ae/l/collections/summer-style/"
+      },
+      {
+        "locale": "en-IL",
+        "url": "https://www.marksandspencer.com/il/l/collections/summer-style/"
+      },
+      {
+        "locale": "en-HR",
+        "url": "https://www.marksandspencer.com/en-hr/l/collections/summer-style/"
+      },
+      {
+        "locale": "nl-NL",
+        "url": "https://www.marksandspencer.com/nl/l/collecties/zomerstijl/"
+      },
+      {
+        "locale": "en-HU",
+        "url": "https://www.marksandspencer.com/hu/l/collections/summer-style/"
+      },
+      {
+        "locale": "en-QA",
+        "url": "https://www.marksandspencer.com/qa/l/collections/summer-style/"
+      },
+      {
+        "locale": "fr-FR",
+        "url": "https://www.marksandspencer.com/fr/l/collections/style-estival/"
+      },
+      {
+        "locale": "de-DE",
+        "url": "https://www.marksandspencer.com/de/l/kollektionen/sommerstyle/"
+      },
+      {
+        "locale": "en-NL",
+        "url": "https://www.marksandspencer.com/en-nl/l/collections/summer-style/"
+      },
+      {
+        "locale": "en-NP",
+        "url": "https://www.marksandspencer.com/np/l/collections/summer-style/"
+      },
+      {
+        "locale": "en-NO",
+        "url": "https://www.marksandspencer.com/no/l/collections/summer-style/"
+      },
+      {
+        "locale": "en-FJ",
+        "url": "https://www.marksandspencer.com/fj/l/collections/summer-style/"
+      },
+      {
+        "locale": "en-FI",
+        "url": "https://www.marksandspencer.com/fi/l/collections/summer-style/"
+      },
+      {
+        "locale": "en-MV",
+        "url": "https://www.marksandspencer.com/mv/l/collections/summer-style/"
+      },
+      {
+        "locale": "en-MT",
+        "url": "https://www.marksandspencer.com/mt/l/collections/summer-style/"
+      },
+      {
+        "locale": "en-ES",
+        "url": "https://www.marksandspencer.com/en-es/l/collections/summer-style/"
+      },
+      {
+        "locale": "en-MY",
+        "url": "https://www.marksandspencer.com/my/l/collections/summer-style/"
+      },
+      {
+        "locale": "en-MX",
+        "url": "https://www.marksandspencer.com/en-mx/l/collections/summer-style/"
+      },
+      {
+        "locale": "en-GA",
+        "url": "https://www.marksandspencer.com/ga/l/collections/summer-style/"
+      },
+      {
+        "locale": "en-OM",
+        "url": "https://www.marksandspencer.com/en-om/l/collections/summer-style/"
+      },
+      {
+        "locale": "en-GH",
+        "url": "https://www.marksandspencer.com/gh/l/collections/summer-style/"
+      },
+      {
+        "locale": "en-FR",
+        "url": "https://www.marksandspencer.com/en-fr/l/collections/summer-style/"
+      },
+      {
+        "locale": "en-NZ",
+        "url": "https://www.marksandspencer.com/nz/l/collections/summer-style/"
+      },
+      {
+        "locale": "en-GB",
+        "url": "https://www.marksandspencer.com/c/summer-shop"
+      },
+      {
+        "locale": "x-default",
+        "url": "https://www.marksandspencer.com/c/summer-shop"
+      },
+      {
+        "locale": "en-IE",
+        "url": "https://www.marksandspencer.com/ie/c/summer-shop"
+      }
+    ]
+  }
+]

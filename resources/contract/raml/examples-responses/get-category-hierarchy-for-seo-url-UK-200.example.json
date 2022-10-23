@@ -1,0 +1,36 @@
+[
+  {
+    "_id": "SubCategory_427",
+    "name": "Clothing",
+    "seoURL": "",
+    "storeId": "UK",
+    "childCategories": [
+      {
+        "_id": "SubCategory_429",
+        "name": "Dresses",
+        "seoURL": "l/women/dresses",
+        "storeId": "UK",
+        "childCategories": [
+          {
+            "_id": "SubCategory_417963",
+            "name": "Work Dresses",
+            "seoURL": "l/women/dresses/work-dresses",
+            "storeId": "UK",
+            "isFacetExist": true,
+            "isChildExist": false,
+            "childCategories": []
+          },
+          {
+            "_id": "SubCategory_19193287",
+            "name": "Day Dresses",
+            "seoURL": "l/women/dresses/day-dresses",
+            "storeId": "UK",
+            "isFacetExist": true,
+            "isChildExist": false,
+            "childCategories": []
+          }
+        ]
+      }
+    ]
+  }
+]

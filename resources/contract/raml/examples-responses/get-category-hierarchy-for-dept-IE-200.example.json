@@ -1,0 +1,83 @@
+[
+  {
+    "_id": "IE_SC_Level_1_1010021",
+    "name": "Men",
+    "seoURL": "c/men",
+    "storeId": "IE",
+    "isChildExist": true,
+    "childCategories": [
+      {
+        "_id": "IE_SubCategory_19311877",
+        "name": "All shirts",
+        "seoURL": "l/men/all-shirts",
+        "storeId": "IE",
+        "isChildExist": true,
+        "childCategories": []
+      },
+      {
+        "_id": "IE_SubCategory_13617201310",
+        "name": "Big & tall suits",
+        "seoURL": "l/men/big-and-tall-suits",
+        "storeId": "IE",
+        "isChildExist": false,
+        "childCategories": []
+      },
+      {
+        "_id": "IE_SubCategory_13617201173",
+        "name": "Clothing",
+        "seoURL": "",
+        "storeId": "IE",
+        "isChildExist": true,
+        "childCategories": []
+      },
+      {
+        "_id": "IE_SubCategory_20031064",
+        "name": "Essentials",
+        "seoURL": "",
+        "storeId": "IE",
+        "isChildExist": true,
+        "childCategories": []
+      },
+      {
+        "_id": "IE_SubCategory_18964604",
+        "name": "Formal wear",
+        "seoURL": "c/men/formal-wear",
+        "storeId": "IE",
+        "isChildExist": true,
+        "childCategories": []
+      },
+      {
+        "_id": "IE_SubCategory_6732148",
+        "name": "Holiday Shop",
+        "seoURL": "c/men/holiday-shop",
+        "storeId": "IE",
+        "isChildExist": true,
+        "childCategories": []
+      },
+      {
+        "_id": "IE_SubCategory_5775172",
+        "name": "New in",
+        "seoURL": "l/men/new-in",
+        "storeId": "IE",
+        "isChildExist": true,
+        "childCategories": []
+      },
+      {
+        "_id": "IE_SubCategory_7151004",
+        "name": "Shoes & boots",
+        "seoURL": "",
+        "storeId": "IE",
+        "isChildExist": true,
+        "childCategories": []
+      },
+      {
+        "_id": "IE_SubCategory_19314471",
+        "name": "Suits & tailoring",
+        "seoURL": "",
+        "storeId": "IE",
+        "isChildExist": true,
+        "childCategories": []
+      }
+    ]
+  }
+]

@@ -1,0 +1,82 @@
+{
+  "pageSeoUrl": "ie/l/women/tops-and-tshirts",
+  "facetSeoUrl": "ie/l/women/tops-and-tshirts/fs5/t-shirts-3:tops-1/round-neck?maxparcount=true",
+  "facetFields": {
+    "Product Type": {
+      "id": "Product Type",
+      "data": [
+        {
+          "name": "T-shirts",
+          "selected": true,
+          "disabled": false,
+          "facetSeoUrl": "ie/l/women/tops-and-tshirts/fs5/t-shirts-3:tops-1/round-neck?maxparcount=true"
+        },
+        {
+          "name": "Tops",
+          "selected": true,
+          "disabled": false,
+          "facetSeoUrl": "ie/l/women/tops-and-tshirts/fs5/t-shirts-3:tops-1/round-neck?maxparcount=true"
+        },
+        {
+          "name": "Blouses",
+          "selected": false,
+          "disabled": false,
+          "facetSeoUrl": "ie/l/women/tops-and-tshirts/fs5/blouses-1:t-shirts-3:tops-1/round-neck?maxparcount=true"
+        },
+        {
+          "name": "Vests",
+          "selected": false,
+          "disabled": false,
+          "facetSeoUrl": "ie/l/women/tops-and-tshirts/fs5/t-shirts-3:tops-1:vests-1/round-neck?maxparcount=true"
+        }
+      ]
+    },
+    "Colour": {
+      "id": "Colour",
+      "data": [
+        {
+          "name": "White",
+          "selected": false,
+          "disabled": false,
+          "facetSeoUrl": "ie/l/women/tops-and-tshirts/fs5/t-shirts-3:tops-1/white/round-neck?maxparcount=true"
+        },
+        {
+          "name": "Blue",
+          "selected": false,
+          "disabled": false,
+          "facetSeoUrl": "ie/l/women/tops-and-tshirts/fs5/t-shirts-3:tops-1/blue/round-neck?maxparcount=true"
+        },
+        {
+          "name": "Yellow",
+          "selected": false,
+          "disabled": false,
+          "facetSeoUrl": "ie/l/women/tops-and-tshirts/fs5/t-shirts-3:tops-1/yellow/round-neck?maxparcount=true"
+        },
+        {
+          "name": "Green",
+          "selected": false,
+          "disabled": false,
+          "facetSeoUrl": "ie/l/women/tops-and-tshirts/fs5/t-shirts-3:tops-1/green/round-neck?maxparcount=true"
+        },
+        {
+          "name": "Orange",
+          "selected": false,
+          "disabled": false,
+          "facetSeoUrl": "ie/l/women/tops-and-tshirts/fs5/t-shirts-3:tops-1/orange/round-neck?maxparcount=true"
+        },
+        {
+          "name": "Purple",
+          "selected": false,
+          "disabled": false,
+          "facetSeoUrl": "ie/l/women/tops-and-tshirts/fs5/t-shirts-3:tops-1/purple/round-neck?maxparcount=true"
+        },
+        {
+          "name": "Red",
+          "selected": false,
+          "disabled": false,
+          "facetSeoUrl": "ie/l/women/tops-and-tshirts/fs5/t-shirts-3:tops-1/red/round-neck?maxparcount=true"
+        }
+      ]
+    }
+  }
+}

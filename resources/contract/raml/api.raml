@@ -1,0 +1,311 @@
+#%RAML 1.0
+title: Category API
+documentation: !include documentation/summarypage.yaml
+version: v1
+baseUri: https://{host}/navigation/{apiversion}
+baseUriParameters:
+  host:
+    displayName: URI for the navigation service
+    type: string
+    enum: [ "api-dev.marksandspencer.com",
+            "api-stage.marksandspencer.com",
+            "api-perf.marksandspencer.com",
+            "api.marksandspencer.com" 
+          ]
+  apiversion:
+    displayName: ApiVersion
+    type: string
+    enum: [ "v1" ]
+mediaType: 
+- application/json
+securitySchemes: !include securitySchemes/common-security-schema.yaml
+securedBy: [mns-apigee-header, mns-apigee-parameter]
+resourceTypes:
+  general-types: !include resourceTypes/header-resourcetypes-trait.yaml
+uses:
+  traits: traits/traits.raml
+types:
+  common-error-response-json:
+    type: !include schemas-responses/error-response.schema.json
+  Category:
+    description:  This object is the Category information with a basic category attributes information.
+    type: !include schemas-responses/get-category-dtl-200.schema.json
+    example: !include examples-responses/get-category-dtl-200.example.json
+  CategoryAttr:
+    description:  This object is the Category information along a additional attributes like page, seo, breadcrumb & metadata.
+    type: !include schemas-responses/get-category-attribute-200.schema.json
+    example: !include examples-responses/get-category-attribute-200.example.json
+  CategoryAttrFoundIt:
+    description:  This object is the Category information along attributes & FoundIt page contents.
+    type: !include schemas-responses/get-category-foundit-200.schema.json
+    example: !include examples-responses/get-category-foundit-200.example.json
+  Redirection:
+    description:  This object is provides redirection information for given SEO(Category & FoundIt) if available.
+    type: !include schemas-responses/get-category-redirection-200.schema.json
+    example: !include examples-responses/get-category-redirection-200.example.json
+  RedirectionExtract:
+    description:  This object provides success or failure message for redirection extraction process.
+    type: !include schemas-responses/get-redirection-extract-200.schema.json
+    example: !include examples-responses/get-redirection-extract-200.example.json
+  FacetDetail:
+    type: !include schemas-responses/get-facet-seo-generation-200.schema.json
+    description: This object contains the generated facet SEO url based on the SEO enabled facet names.
+    examples:
+      default: !include examples-responses/get-facet-seo-generation-200.example.json
+      facetUrlinput: !include examples-responses/get-facet-seo-generation-200.example2.json
+      ieinput: !include examples-responses/get-facet-seo-generation-ie-200.example.json
+  MappingDetails:
+    description: This object array provides the Category Mapping information between International and UK/IE details or vice versa
+    type: !include schemas-responses/get-international-categories-200.schema.json
+    examples:
+      default: !include examples-responses/get-international-categories-200.example.json
+      UK: !include examples-responses/get-international-categories-UK-200.example.json
+      IE: !include examples-responses/get-international-categories-IE-200.example.json
+      with-EU-id: !include examples-responses/get-international-categories-for-id-200.example.json
+      with-UK-id: !include examples-responses/get-international-categories-for-id-UK.example.json
+      with-IE-id: !include examples-responses/get-international-categories-for-id-IE.200.example.json
+  ProductMappings:
+    description: This object provides the Product Mapping information between International and UK/IE details or vice versa
+    type: !include schemas-responses/get-international-product-200.schema.json
+    examples:
+      default: !include examples-responses/get-international-products-200.example.json
+      UK: !include examples-responses/get-international-products-UK-200.example.json
+      IE: !include examples-responses/get-international-products-IE-200.example.json
+  product-sales-hierarchy:
+    description:  This object contains the basic product details and its parent sales categories hierarchical information along with alternative cross domain/store urls.
+    type: !include schemas-common/navigation-sales-hierarchy.schema.json
+    example: !include examples-responses/get-product-sales-hierarchy-dtl-200.example.json
+  CategoryHierarchy:
+      description: This object is the Category hierarchy information with a basic category attributes information.
+      type: !include schemas-responses/get-category-hierarchy-200.schema.json
+      example: !include examples-responses/get-category-hierarchy-for-dept-UK-200.example.json
+  FacetSeoDtl:
+      description: This object is the Facet SEO detail information with facet name and facet seo url.
+      type: !include schemas-responses/get-facet-seo-200.schema.json
+      example: !include examples-responses/get-facet-seo-dtl-200.example.json
+  ProductSeoDtl:
+      description: This object is the Product SEO detail information by product external Id(s).
+      type: !include schemas-responses/get-product-seo-dtl-200.schema.json
+      example: !include examples-responses/get-product-seo-dtl-200.example.json
+
+/category/seo:
+  description: Get category information using the SEO. This is valid for category & Facet SEOs.
+  type:
+    general-types
+  get:
+    is: [traits.all-trait, traits.search-params]
+    securedBy: [mns-apigee-parameter]
+    responses:
+      200:
+        body:
+          application/json:
+            type: Category
+
+/category/seo?isAttrReq=true:
+  description: Get category information using the SEO with additional attributes like page, seo, breadcrumbs, atlernative URLs & FoundIt content. This is valid for category & Facet SEOs.
+  type:
+    general-types
+  get:
+    is: [traits.all-trait, traits.search-params]
+    securedBy: [mns-apigee-parameter]
+    responses:
+      200:
+        body:
+          application/json:
+            type: CategoryAttr
+
+/category/{categoryId}:
+  description: Get category information using category Id.
+  type:
+    general-types
+  get:
+    is: [traits.all-trait]
+    securedBy: [mns-apigee-parameter]
+    responses:
+      200:
+        body:
+          application/json:
+            type: Category
+
+/redirection/extract/{storeId}:
+  description: Extract redirect urls based on storeId.
+  get:
+    is: [traits.redirection-extract-params]
+    responses:
+      200:
+        body:
+          application/json:
+            type: RedirectionExtract
+
+/facetseogeneration:
+  get:
+    displayName: regenerateFacetSeoUrlsUsingPOST
+    securedBy: [mns-apigee-parameter]
+    responses:
+      '200':
+        description: Success.
+        body:
+          application/json:
+            type: FacetDetail
+    headers:
+      hashCode:
+        description: "Hashcode of the requested input"
+        type: string
+        example: "16f91d4e78a12e89050dd24e13f93415"
+      correlationId:
+        description: correlationId
+        required: false
+        default: Blank
+        type: string
+    queryParameters:
+      seoURL:
+        description: "Page SEO url, in case of IE(Ireland) appended with ie/"
+        type: string
+        example: "l/women/dresses/day-dresses OR ie/l/women/dresses/day-dresses"
+    body:
+      application/json:
+        description: facetDetails
+        type: FacetDetail
+
+/international/categories:
+    get:
+      is: [traits.international-lookup-params]
+      description: Get UK /IE Category mapping details for International Category or vice versa
+      displayName: getCategoryMappingDetailsUsingGET
+      responses:
+        '200':
+          description: Success
+          body:
+            application/json:
+              type: array
+              items: !include traits/MappingDetails.raml
+    '/{categoryId}':
+      get:
+        description: Get Category mapping details for Category, using UK/IE or EU identifier
+        displayName: getCategoryMappingDetailsByIdUsingGET
+        responses:
+          '200':
+            description: Success
+            body:
+              application/json:
+                type: array
+                items: !include traits/MappingDetails.raml
+      uriParameters:
+        categoryId:
+          description: Unique identifier of category.
+          type: string
+
+/international/products:
+    get:
+      is: [traits.international-lookup-params]
+      description: Get UK /IE Product mapping details for International Products or Vice versa
+      displayName: getProductMappingDetailsUsingGET
+      responses:
+        '200':
+          description: Success
+          body:
+            application/json:
+              type: ProductMappings
+      queryParameters:
+        page:
+          description: page
+          required: false
+          default: 0
+          type: integer
+          format: int32
+        size:
+          description: size
+          required: false
+          default: 100
+          type: integer
+          format: int32
+
+/hierarchy/sales/{productExternalId}:
+  description: Get Product and Sales Category Hierarchical information
+  type:
+    general-types
+  get:
+    is: [traits.all-trait, traits.sales-hierarchy-search-params]
+    securedBy: [mns-apigee-parameter]
+    responses:
+      200:
+        body:
+          application/json:
+            type: product-sales-hierarchy
+
+
+/categories:
+  description: Get category hierarchy details based on storeId and department
+  get:
+    is: [traits.category-hierarchy-params]
+    responses:
+      200:
+        body:
+          application/json:
+            type: CategoryHierarchy
+
+/category/hierarchy:
+  description: Get category hierarchy details based on storeId and seoUrl
+  get:
+    responses:
+      200:
+        body:
+          application/json:
+            type: CategoryHierarchy
+    queryParameters:
+      storeId:
+        description: storeid
+        required: true
+        default: "UK"
+        type: string
+      seoURL:
+        description: seourl
+        required: true
+        type: string
+
+/category/{categoryId}/hierarchy:
+  description: Get category hierachy details based on input categoryId
+  get:
+    responses:
+      200:
+        body:
+          application/json:
+            type: CategoryHierarchy
+  uriParameters:
+    categoryId:
+          description: Unique identifier of category.
+          type: string
+          required: true
+
+/category/{categoryId}/facets:
+  description: Get Facet SEO details based on categoryId and facetType
+  get:
+    responses:
+      200:
+        body:
+          application/json:
+            type: FacetSeoDtl
+    queryParameters:
+      facetType:
+        description: facetType
+        required: false
+        type: string
+  uriParameters:
+    categoryId:
+          description: Unique identifier of category.
+          type: string
+          required: true
+
+/product/seo:
+  description: Get Product SEO details based on product external ids.
+  get:
+    responses:
+      200:
+        body:
+          application/json:
+            type: ProductSeoDtl
+    queryParameters:
+      productIds:
+        description: Single or multiple product external Ids.
+        required: true
+        type: string

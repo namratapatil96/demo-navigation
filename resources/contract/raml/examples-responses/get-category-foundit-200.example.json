@@ -1,0 +1,77 @@
+{
+    "identifier": "SubCategory_2021641",
+    "name": "Push-up Bras",
+    "isActive": "false",
+    "isPlp": "true",
+    "path": "l/lingerie/bras/pushup-bras",
+    "seoDetails": {
+        "pageSeoUrl": "l/lingerie/bras/pushup-bras",
+        "bannerTitle": "Push-Up Bras",
+        "pageTitle": "Push-Up Bras | M&S",
+        "bannerEspotName": "SubCategory_2021641_PLPBANNER",
+        "navList": "MSHOME::UK WEB ROOT::LINGERIE[LINK]::BRAS::BRAS[LINK]::PUSH-UP BRAS::",
+        "metaDescription": "Our collection of push-up bras features a variety of designs, from plunge to padded to balcony. Find a high-impact style that suits you with help from M&S",
+        "parentSeoUrl": "l/lingerie/bras"
+    },
+    "pageDetails": {
+        "imageLandscape": "No",
+        "pageIndex": "No",
+        "viewType": "MODEL",
+        "templateType": "NORMAL",
+        "spotlightId": "",
+        "spotlightVersion": "V1",
+        "spotlightProductCount": "10",
+        "sortBy": ""
+    },
+    "breadCrumbs": [
+        {
+            "name": "Lingerie",
+            "url": "c/lingerie",
+            "position": 2
+        },
+        {
+            "name": "Bras",
+            "url": "l/lingerie/bras",
+            "position": 3
+        }
+    ],
+    "metaData": {
+        "contentPageSpotlightId": "",
+        "contentPageSpotlightVersion": "V1"
+    },
+    "alternateURLs": [
+        {
+            "locale": "en-GB",
+            "url": "https://www.marksandspencer.com/l/lingerie/bras/pushup-bras"
+        },
+        {
+            "locale": "x-default",
+            "url": "https://www.marksandspencer.com/l/lingerie/bras/pushup-bras"
+        }
+    ],
+    "foundit": {
+        "Page": {
+            "CustomFields": [],
+            "HeadContent": {
+                "MetaDescription": "Our collection of push-up bras features a variety of designs, from plunge to padded to balcony. Find a high-impact style that suits you with help from M&S",
+                "Title": "Push-Up Bras | M&S"
+            },
+            "HeadInstructions": {
+                "CanonicalUrl": null,
+                "MetaRobots": null
+            },
+            "ImageLinksEnabled": false,
+            "Links": null,
+            "PageContent": {
+                "Abstract": "A figure-flattering push-up bra adds a little lift to your outfit. Our pieces designed with Body technology are smooth and invisible under clothes, while multiways are ideal for creating strapless or halterneck looks. Throughout the selection you have a choice of shades, from neutral colours through to bold hues – and look out for delicate lace detail and scalloped trims",
+                "H1": "Push-Up Bras"
+            },
+            "Products": null,
+            "ServerSide": {
+                "PageOrigin": "Existing",
+                "RedirectCode": 200,
+                "RedirectTargetUrl": null
+            }
+        }
+    }
+}

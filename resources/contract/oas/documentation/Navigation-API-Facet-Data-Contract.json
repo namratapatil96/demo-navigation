@@ -1,0 +1,211 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "Providing navigational services for .COM platform",
+    "version": "1.0",
+    "title": "Navigation Facets API Documentation"
+  },
+  "host": "localhost:8080",
+  "basePath": "/",
+  "tags": [
+    {
+      "name": "Facet Exposer",
+      "description": "Facet SEO Generation"
+    },
+    {
+      "name": "Facet Matrix Exposer",
+      "description": "Facet Lookup Controller"
+    }
+  ],
+  "paths": {
+    "/nav-facet/v1/facetmatrix": {
+      "get": {
+        "tags": [
+          "Facet Matrix Exposer"
+        ],
+        "summary": "Get facet matrix details\n",
+        "operationId": "getFacetMatrixDetailsUsingGET",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "facetType",
+            "in": "query",
+            "description": "facetType",
+            "required": false,
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "collectionFormat": "multi"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/FacetMatrix"
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Resource not found"
+          },
+          "500": {
+            "description": "Failed to get facet matrix details"
+          }
+        }
+      }
+    },
+    "/nav-facet/v1/facetseogeneration": {
+      "get": {
+        "tags": [
+          "Facet Exposer"
+        ],
+        "summary": "Generate Facet SEO Urls for HREF and selected facets.\n",
+        "operationId": "getRegeneratedFacetSeoUrlsUsingGET",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "correlationId",
+            "in": "header",
+            "description": "correlationId",
+            "required": false,
+            "type": "string",
+            "default": "Blank"
+          },
+          {
+            "in": "body",
+            "name": "facetDetails",
+            "description": "facetDetails",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/FacetGeneration"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/FacetGeneration"
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "424": {
+            "description": "Failed Dependency {message}"
+          },
+          "500": {
+            "description": "Failed to generate facet Seo Urls"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "FacetGeneration": {
+      "type": "object",
+      "properties": {
+        "facetFields": {
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/definitions/FacetType"
+          }
+        },
+        "facetSeoUrl": {
+          "type": "string"
+        },
+        "pageSeoUrl": {
+          "type": "string"
+        }
+      },
+      "title": "FacetGeneration"
+    },
+    "FacetMatrix": {
+      "type": "object",
+      "properties": {
+        "facetType": {
+          "type": "string"
+        },
+        "facetValues": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/MatrixValue"
+          }
+        },
+        "sequence": {
+          "type": "integer",
+          "format": "int32"
+        }
+      },
+      "title": "FacetMatrix"
+    },
+    "FacetType": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/FacetValue"
+          }
+        },
+        "id": {
+          "type": "string"
+        }
+      },
+      "title": "FacetType"
+    },
+    "FacetValue": {
+      "type": "object",
+      "properties": {
+        "disabled": {
+          "type": "boolean"
+        },
+        "facetSeoUrl": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "selected": {
+          "type": "boolean"
+        }
+      },
+      "title": "FacetValue"
+    },
+    "MatrixValue": {
+      "type": "object",
+      "properties": {
+        "facetValue": {
+          "type": "string"
+        },
+        "seoValue": {
+          "type": "string"
+        }
+      },
+      "title": "MatrixValue"
+    }
+  }
+}

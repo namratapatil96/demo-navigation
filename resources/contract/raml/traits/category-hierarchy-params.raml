@@ -1,0 +1,13 @@
+#%RAML 1.0 Trait
+usage: A trait to use for Category hierarchy lookup
+queryParameters:
+  storeId:
+    description: Country for which category details to be searched
+    type: string
+    required: true
+    enum: ["UK", "IE"]
+  departments:
+    description: Department name for which category details to be searched.
+    type: string
+    required: true
+    enum: ["Men","Women"]

@@ -1,0 +1,34 @@
+usage: This resourceType should be used for any collection of items
+post?:
+  headers:
+    x-transaction-id:
+      description: |
+        This is to trace the request/response transactions.
+      type: string
+      required: false
+      example: |
+        7CCD2B24E49147218D9514BC6E8D1FFB
+get?:
+  headers:
+    correlationId:
+      description: |
+        This is to trace the request/response transactions.
+      type: string
+      required: false
+      example: |
+        7CCD2B24E49147218D9514BC6E8D1FFB
+    Accept?:
+      description: |
+        This will specify the format of the response that the client wants as the response to the invocation. The supported types now are json, xml, csv.
+      required: false
+      enum: [ application/json ]
+      default: application/json
+    Access-Control-Allow-Origin?:
+      example: |
+        *
+    Access-Control-Allow-Methods?:
+      example: |
+        GET, POST, DELETE, PATCH, PUT
+    Access-Control-Allow-Headers?:
+      example: |
+        Content-Type, Accept

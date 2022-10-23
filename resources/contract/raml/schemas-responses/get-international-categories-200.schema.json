@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "array",
+  "items": [
+    {
+      "type": "object",
+      "properties": {
+        "categoryId": {
+          "$ref": "../schemas-common/mapping-details.schema.json#/properties/identifier"
+        },
+        "alternateURLs": {
+          "$ref": "../schemas-common/mapping-details.schema.json#/properties/alternateURLs"
+        }
+      }
+    }
+  ],
+  "required": [
+    "categoryId",
+    "alternateURLs"
+  ]
+}

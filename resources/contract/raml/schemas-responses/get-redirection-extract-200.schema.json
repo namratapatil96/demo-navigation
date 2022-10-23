@@ -1,0 +1,35 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "message": {
+      "type": "string",
+      "description": "Redirection extraction success or failure message for storeId UK or IE",
+      "example": "Redirect File : ms_redirecturl parsed successfully for store UK"
+    },
+    "error": {
+      "type": "string",
+      "description": "Error happened during redirection extraction process",
+      "example": "Errors occurred while reading content from storage"
+    },
+    "status": {
+      "type": "string",
+      "description": "Error status",
+      "example": "Unauthorized"
+    },
+    "path": {
+      "type": "string",
+      "description": "URI path which exception has occurred",
+      "example": "uri=/redirection/extract/UK"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date",
+      "description": "Date and time of redirection extraction process",
+      "example": "2021-03-10T04:07:39.227+0000"
+    }
+  },
+  "required": [
+    "message"
+  ]
+}

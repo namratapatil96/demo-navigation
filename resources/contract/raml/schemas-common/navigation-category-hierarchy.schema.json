@@ -1,0 +1,102 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "title": "Category Hierarchy",
+  "definitions":{
+    "identifier": {
+      "type": "string",
+      "description": "Unique identifier of category. Mapping STEP-ProductInformation/Classifications/Classification/attr=ID",
+      "example": "SubCategory_26224992,IE_SubCategory_17873496,CFTO_Level_1_11019042,CFTO_IE_Level_1_11019044"
+    },
+    "name": {
+      "type": "string",
+      "description":"Input department received as part of request attribute departments",
+      "example": "Men, Women"
+    },
+    "seoURL": {
+      "type": "string",
+      "description": "Parent category SEO url for requested department",
+      "example" :"c/men for department Men"
+    },
+    "storeId": {
+      "type": "string",
+      "description": "Input storeId received as part of request attribute storeId",
+      "enum": ["UK", "IE"]
+    },
+    "isChildExist": {
+      "type": "boolean",
+      "description": "True: Child categories are available, False: Child categories not available",
+      "enum": [true,false]
+    },
+    "isFacetExist": {
+      "type": "boolean",
+      "description": "True: Facet is available, False: Facet is not available",
+      "enum": [true, false]
+    },
+    "childCategories": {
+      "description": "Child categories of input department received as part of request attribute departments",
+
+      "definitions": {
+
+        "_id": {
+          "$ref":"#/definitions/identifier"
+        },
+        "name": {
+          "$ref":"#/definitions/name"
+        },
+        "seoURL" : {
+          "$ref":"#/definitions/seoURL"
+        },
+        "storeId": {
+          "$ref":"#/definitions/storeId"
+        },
+        "isChildExist": {
+          "$ref":"#/definitions/isChildExist"
+        },
+        "childCategories": {
+          "$ref":"#/definitions/childCategories"
+        }
+      }
+
+    }
+  },
+  "properties": {
+    "identifier": {
+      "type":"string",
+      "$ref":"#/definitions/identifier"
+    },
+    "name": {
+      "type":"string",
+      "$ref":"#/definitions/name"
+    },
+    "seoURL": {
+      "type":"string",
+      "$ref":"#/definitions/seoURL"
+    },
+    "storeId": {
+      "type":"string",
+      "$ref":"#/definitions/storeId"
+    },
+    "isChildExist": {
+      "type": "boolean",
+      "$ref":"#/definitions/isChildExist"
+    },
+    "isFacetExist" : {
+      "type": "boolean",
+      "$ref":"#/definitions/isFacetExist"
+    },
+    "childCategories": {
+      "type":"array",
+      "items": [
+        {
+          "type":"object",
+          "properties":{
+            "childCategories": {
+              "$ref":"#/definitions/childCategories"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

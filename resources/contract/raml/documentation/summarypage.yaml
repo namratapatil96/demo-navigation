@@ -1,0 +1,13 @@
+- title: Home
+  content: |
+    Category SEO: Exposes category attributes with SEO management capability.
+    USE: Category APIs uses PIM(PRD0003) & FoundIt to fetch category & page attribute data. Consumers using this API to get category attributes for SEO(PLP & DLP).
+    Further Information on Confluence https://confluence.marksandspencer.app/display/API/Category+APIs.
+
+    Sales Hierarchy: Exposes hierarchical infromation about parent sales categories of a product
+    USE: Hiearchy APIs uses PIM(PRD0003) to fetch product and linked sales category hierarchical information. Consumers using this API to get basic product attributes,
+    sales category hierarchical information, alternative urls and referenced product details.
+    Further Information on Confluence https://confluence.marksandspencer.app/display/API/Navigation.
+
+    Facet Generation: Generate Facet SEO Urls for HREF and selected facets.
+    USE: Consumers using this API to get SEO and Facet SEO urls for the selected facets

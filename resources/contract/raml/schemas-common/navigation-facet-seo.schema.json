@@ -1,0 +1,47 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "title": "Facet SEO details",
+  "definitions": {
+    "facetType": {
+      "type": "string",
+      "description": "Unique name for facet type",
+      "example": "Gender,Product Type"
+    },
+    "facetName": {
+      "type": "string",
+      "description": "Name of facet",
+      "example": "Normal All Beauty, Home Fragrance"
+    },
+    "facetSeoUrl": {
+      "type": "string",
+      "description": "Facet SEO url",
+      "example": "l/beauty/all-beauty/fs5/normal"
+    }
+  },
+  "properties": {
+    "facetValue": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "facetName": {
+              "$ref": "#/definitions/facetName"
+            },
+            "facetSeoUrl": {
+              "$ref": "#/definitions/facetSeoUrl"
+            },
+            "facetType": {
+              "$ref": "#/definitions/facetType"
+            }
+          }
+        }
+      ]
+    },
+    "facetType": {
+      "type":"string",
+      "$ref": "#/definitions/facetType"
+    }
+  }
+}

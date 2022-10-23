@@ -1,0 +1,85 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$id": "#/ProductSeoRedirectionDetails",
+    "$ref": "#/definitions/ProductSeoDetails",
+    "title": "The root schema for Product SEO details Response",
+    "type": "object",
+    "description": "The root schema comprises the entire JSON schema of Product SEO redirection details Response Type.",
+    "examples": [
+      { "$ref": "../examples-responses/get-product-seo-redirect-dtl-200.example.json" }
+    ],
+    "definitions": {
+        "ProductSeoDetails": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "id": {
+                    "type": "string",
+                    "title": "Product ID",
+                    "description": "Unique identifier of the product",
+                    "examples": [
+                      "T42-6976P-201811"
+                    ]
+                },
+                "name": {
+                    "type": "string",
+                    "title": "Product name",
+                    "description": "Full description of the product name",
+                    "examples": [
+                      "PETITE Twisted Front Fit & Flare Midi Dress"
+                    ]
+                },
+                "productExternalId": {
+                    "type": "string",
+                    "title": "Product External ID",
+                    "description": "External identifier of product for reference",
+                    "examples": [
+                      "P60263304"
+                    ]
+                },
+                "seoURL": {
+                    "type": "string",
+                    "title": "Product SEO Url",
+                    "description": "SEO Friendly Url of the Product",
+                    "examples": [
+                      "petite-twisted-front-fit-and-flare-midi-dress/p/clp60263304"
+                    ]
+                },
+                "redirection": {
+                    "$ref": "#/definitions/Redirection"
+                }
+            },
+            "required": [
+                "id",
+                "name",
+                "productExternalId",
+                "redirection",
+                "seoURL"
+            ],
+            "title": "ProductSeoDetails"
+        },
+            "Redirection": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "seoURL": {
+                    "type": "string",
+                    "title": "Product Redirected Url",
+                    "description": "SEO Friendly Url of the Product",
+                    "examples": [
+                      "petite-twisted-front-fit-and-flare-midi-dress-new/p/clp60263304"
+                    ]
+                },
+                "type": {
+                    "type": "string",
+                    "title": "Product Redirected Type",
+                    "description": "Redirection Type",
+                    "examples": [
+                      "OffSale"
+                    ]
+                }
+            },
+            "title": "Redirection"
+        }
+    }
+}

@@ -1,0 +1,14 @@
+#%RAML 1.0 Trait
+usage: Apply this trait to filter the sales hierarchical infromation.
+queryParameters:
+      productExternalId:
+        description: Product External Identifier
+        type: string
+        required: true
+        example: "P60430212"
+      storeId:
+        description: Country/Store Code to which the sales hierarhical information is required. Hierarchical information is provided for all the counties/stores linked to a product if this parameter is not passed.
+        type: string
+        required: false
+        enum: ["UK", "IE", "CFTO", "IECFTO"]
+    

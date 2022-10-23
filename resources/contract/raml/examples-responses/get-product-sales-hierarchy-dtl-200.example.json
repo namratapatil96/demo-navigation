@@ -1,0 +1,267 @@
+{
+    "id": "T42-6976P-201811",
+    "name": "PETITE Twisted Front Fit & Flare Midi Dress",
+    "productExternalId": "P60263304",
+    "seoURL": "petite-twisted-front-fit-and-flare-midi-dress/p/clp60263304",
+    "categoryList": [
+        {
+            "id": "IE_SubCategory_1001441",
+            "name": "Petite",
+            "seoURL": "l/women/petite",
+            "parentNode": {
+                "id": "IE_SubCategory_18139919",
+                "name": "Shop by fit",
+                "seoURL": "",
+                "parentNode": {
+                    "id": "IE_SC_Level_1_1000001",
+                    "name": "Women",
+                    "seoURL": "c/women",
+                    "parentNode": {
+                        "id": "IE_SC_Level_0_12466",
+                        "name": "IE Web Root",
+                        "seoURL": "",
+                        "metadata": {
+                            "isHidden": "No",
+                            "imageLandscape": "No",
+                            "viewType": "MODEL"
+                        },
+                        "storeId": "IE"
+                    },
+                    "metadata": {
+                        "isHidden": "No",
+                        "imageLandscape": "No",
+                        "viewType": "Product"
+                    },
+                    "storeId": "IE",
+                    "deleted": false
+                },
+                "metadata": {
+                    "isHidden": "No",
+                    "imageLandscape": "No",
+                    "viewType": "MODEL"
+                },
+                "storeId": "IE"
+            },
+            "metadata": {
+                "isHidden": "No",
+                "imageLandscape": "No",
+                "viewType": "MODEL"
+            },
+            "storeId": "IE",
+            "deleted": false
+        },
+        {
+            "id": "IE_SubCategory_1002041",
+            "name": "Dresses",
+            "seoURL": "l/women/dresses",
+            "masterCategory": "Yes",
+            "parentNode": {
+                "id": "IE_SubCategory_20006017",
+                "name": "Clothing",
+                "seoURL": "",
+                "parentNode": {
+                    "id": "IE_SC_Level_1_1000001",
+                    "name": "Women",
+                    "seoURL": "c/women",
+                    "parentNode": {
+                        "id": "IE_SC_Level_0_12466",
+                        "name": "IE Web Root",
+                        "seoURL": "",
+                        "metadata": {
+                            "isHidden": "No",
+                            "imageLandscape": "No",
+                            "viewType": "MODEL"
+                        },
+                        "storeId": "IE"
+                    },
+                    "metadata": {
+                        "isHidden": "No",
+                        "imageLandscape": "No",
+                        "viewType": "Product"
+                    },
+                    "storeId": "IE",
+                    "deleted": false
+                },
+                "metadata": {
+                    "isHidden": "No",
+                    "imageLandscape": "No",
+                    "viewType": "MODEL"
+                },
+                "storeId": "IE"
+            },
+            "metadata": {
+                "isHidden": "No",
+                "imageLandscape": "No",
+                "viewType": "MODEL"
+            },
+            "storeId": "IE",
+            "deleted": false
+        },
+        {
+            "id": "IE_SubCategory_13618021100",
+            "name": "Dresses",
+            "seoURL": "l/women/mands-collection/dresses",
+            "parentNode": {
+                "id": "IE_SubCategory_13619442275",
+                "name": "Mands Collection",
+                "seoURL": "l/women/mands-collection",
+                "parentNode": {
+                    "id": "IE_SubCategory_20005798",
+                    "name": "Brands",
+                    "seoURL": "",
+                    "parentNode": {
+                        "id": "IE_SC_Level_1_1000001",
+                        "name": "Women",
+                        "seoURL": "c/women",
+                        "parentNode": {
+                            "id": "IE_SC_Level_0_12466",
+                            "name": "IE Web Root",
+                            "seoURL": "",
+                            "metadata": {
+                                "isHidden": "No",
+                                "imageLandscape": "No",
+                                "viewType": "MODEL"
+                            },
+                            "storeId": "IE"
+                        },
+                        "metadata": {
+                            "isHidden": "No",
+                            "imageLandscape": "No",
+                            "viewType": "Product"
+                        },
+                        "storeId": "IE",
+                        "deleted": false
+                    },
+                    "metadata": {
+                        "isHidden": "No",
+                        "imageLandscape": "No",
+                        "viewType": "MODEL"
+                    },
+                    "storeId": "IE"
+                },
+                "metadata": {
+                    "isHidden": "No",
+                    "imageLandscape": "No",
+                    "viewType": "MODEL"
+                },
+                "storeId": "IE"
+            },
+            "metadata": {
+                "isHidden": "No",
+                "imageLandscape": "No",
+                "viewType": "MODEL"
+            },
+            "storeId": "IE",
+            "deleted": false
+        },
+        {
+            "id": "IE_SubCategory_13619442275",
+            "name": "Mands Collection",
+            "seoURL": "l/women/mands-collection",
+            "parentNode": {
+                "id": "IE_SubCategory_20005798",
+                "name": "Brands",
+                "seoURL": "",
+                "parentNode": {
+                    "id": "IE_SC_Level_1_1000001",
+                    "name": "Women",
+                    "seoURL": "c/women",
+                    "parentNode": {
+                        "id": "IE_SC_Level_0_12466",
+                        "name": "IE Web Root",
+                        "seoURL": "",
+                        "metadata": {
+                            "isHidden": "No",
+                            "imageLandscape": "No",
+                            "viewType": "MODEL"
+                        },
+                        "storeId": "IE"
+                    },
+                    "metadata": {
+                        "isHidden": "No",
+                        "imageLandscape": "No",
+                        "viewType": "Product"
+                    },
+                    "storeId": "IE",
+                    "deleted": false
+                },
+                "metadata": {
+                    "isHidden": "No",
+                    "imageLandscape": "No",
+                    "viewType": "MODEL"
+                },
+                "storeId": "IE"
+            },
+            "metadata": {
+                "isHidden": "No",
+                "imageLandscape": "No",
+                "viewType": "MODEL"
+            },
+            "storeId": "IE",
+            "deleted": false
+        },
+        {
+            "id": "IE_SubCategory_5157725",
+            "name": "Petite Dresses",
+            "seoURL": "l/women/petite/petite-dresses",
+            "parentNode": {
+                "id": "IE_SubCategory_1001441",
+                "name": "Petite",
+                "seoURL": "l/women/petite",
+                "parentNode": {
+                    "id": "IE_SubCategory_18139919",
+                    "name": "Shop by fit",
+                    "seoURL": "",
+                    "parentNode": {
+                        "id": "IE_SC_Level_1_1000001",
+                        "name": "Women",
+                        "seoURL": "c/women",
+                        "parentNode": {
+                            "id": "IE_SC_Level_0_12466",
+                            "name": "IE Web Root",
+                            "seoURL": "",
+                            "metadata": {
+                                "isHidden": "No",
+                                "imageLandscape": "No",
+                                "viewType": "MODEL"
+                            },
+                            "storeId": "IE"
+                        },
+                        "metadata": {
+                            "isHidden": "No",
+                            "imageLandscape": "No",
+                            "viewType": "Product"
+                        },
+                        "storeId": "IE",
+                        "deleted": false
+                    },
+                    "metadata": {
+                        "isHidden": "No",
+                        "imageLandscape": "No",
+                        "viewType": "MODEL"
+                    },
+                    "storeId": "IE"
+                },
+                "metadata": {
+                    "isHidden": "No",
+                    "imageLandscape": "No",
+                    "viewType": "MODEL"
+                },
+                "storeId": "IE"
+            },
+            "metadata": {
+                "isHidden": "No",
+                "imageLandscape": "No",
+                "viewType": "MODEL"
+            },
+            "storeId": "IE",
+            "deleted": false
+        }
+    ],
+    "alternateURLs": [
+        {
+            "locale": "en-IE",
+            "url": "https://www.marksandspencer.com/ie/petite-twisted-front-fit-and-flare-midi-dress/p/clp60263304"
+        }
+    ]
+}

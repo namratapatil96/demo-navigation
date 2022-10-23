@@ -1,0 +1,42 @@
+{
+  "mappings": [
+    {
+      "id": "P60181750",
+      "alternateURLs": [
+        {
+          "locale": "en-GB",
+          "url": "https://www.marksandspencer.com/quilted-ribbed-bed-throw/p/hbp60181750"
+        },
+        {
+          "locale": "x-default",
+          "url": "https://www.marksandspencer.com/quilted-ribbed-bed-throw/p/hbp60181750"
+        },
+        {
+          "locale": "en-IE",
+          "url": "https://www.marksandspencer.com/ie/quilted-ribbed-bed-throw/p/hbp60181750"
+        }
+      ]
+    },
+    {
+      "id": "P60181031",
+      "alternateURLs": [
+        {
+          "locale": "en-GB",
+          "url": "https://www.marksandspencer.com/60-denier-cool-comfort-opaque-tights/p/clp60181031"
+        },
+        {
+          "locale": "x-default",
+          "url": "https://www.marksandspencer.com/60-denier-cool-comfort-opaque-tights/p/clp60181031"
+        },
+        {
+          "locale": "en-IE",
+          "url": "https://www.marksandspencer.com/ie/60-denier-cool-comfort-opaque-tights/p/clp60181031"
+        }
+      ]
+    }
+  ],
+  "pageNumber": 0,
+  "totalPages": 745,
+  "pageSize": 2,
+  "totalElements": 1490
+}

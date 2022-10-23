@@ -1,0 +1,16 @@
+#%RAML 1.0 Library
+
+usage: Common traits for the HTTP API
+
+traits:
+  search-params: !include category-lookup-params.raml
+  common-errors: !include common-error-responses.raml
+  common-params: !include common-params.raml
+  redirection-extract-params: !include redirection-extraction-params.raml
+  international-lookup-params: !include international-lookup-params.raml
+  sales-hierarchy-search-params: !include sales-hierarchy-lookup-params.raml
+  category-hierarchy-params: !include category-hierarchy-params.raml
+
+  all-trait:
+    is: [common-params, common-errors]
+

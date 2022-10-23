@@ -1,0 +1,70 @@
+{
+  "pageSeoUrl": "l/women/dresses/day-dresses",
+  "facetSeoUrl": null,
+  "facetFields": {
+    "Brand": {
+      "id": "Brand",
+      "data": [
+        {
+          "name": "M&S Collection",
+          "selected": false,
+          "disabled": false,
+          "facetSeoUrl": "l/women/dresses/day-dresses/fs5/mands-collection"
+        },
+        {
+          "name": "Per Una",
+          "selected": false,
+          "disabled": false,
+          "facetSeoUrl": "l/women/dresses/day-dresses/fs5/per-una"
+        },
+        {
+          "name": "Autograph",
+          "selected": false,
+          "disabled": false,
+          "facetSeoUrl": "l/women/dresses/day-dresses/fs5/autograph"
+        },
+        {
+          "name": "Rosie for Autograph",
+          "selected": false,
+          "disabled": false,
+          "facetSeoUrl": "l/women/dresses/day-dresses/fs5/rosie-for-autograph"
+        }
+      ]
+    },
+    "Colour": {
+      "id": "Colour",
+      "data": [
+        {
+          "name": "Blue",
+          "selected": false,
+          "disabled": false,
+          "facetSeoUrl": "l/women/dresses/day-dresses/fs5/blue"
+        },
+        {
+          "name": "Red",
+          "selected": false,
+          "disabled": false,
+          "facetSeoUrl": "l/women/dresses/day-dresses/fs5/red"
+        },
+        {
+          "name": "Green",
+          "selected": false,
+          "disabled": false,
+          "facetSeoUrl": "l/women/dresses/day-dresses/fs5/green"
+        },
+        {
+          "name": "Yellow",
+          "selected": false,
+          "disabled": false,
+          "facetSeoUrl": "l/women/dresses/day-dresses/fs5/yellow"
+        },
+        {
+          "name": "Orange",
+          "selected": false,
+          "disabled": false,
+          "facetSeoUrl": "l/women/dresses/day-dresses/fs5/orange"
+        }
+      ]
+    }
+  }
+}

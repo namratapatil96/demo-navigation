@@ -1,0 +1,246 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "#/ProductSalesHierarchy",
+  "type": "object",
+  "title": "The root schema for Product Sales Hierarchy Response",
+  "description": "The root schema comprises the entire JSON schema of Sales Hierarchy Response Type.",
+  "examples": [
+    { "$ref": "../examples-responses/get-product-sales-hierarchy-dtl-200.example.json" }
+  ],
+  "required": [
+    "id",
+    "name",
+    "productExternalId",
+    "seoURL",
+    "categoryList",
+    "alternateURLs"
+  ],
+  "properties": {
+    "id": {
+      "$id": "#/properties/id",
+      "type": "string",
+      "title": "Product ID",
+      "description": "Unique identifier of the product",
+      "examples": [
+        "T42-6976P-201811"
+      ]
+    },
+    "name": {
+      "$id": "#/properties/name",
+      "type": "string",
+      "title": "Product name",
+      "description": "Full description of the product name",
+      "examples": [
+        "PETITE Twisted Front Fit & Flare Midi Dress"
+      ]
+    },
+    "productExternalId": {
+      "$id": "#/properties/productExternalId",
+      "type": "string",
+      "title": "Product External ID",
+      "description": "External identifier of product for reference",
+      "examples": [
+        "P60263304"
+      ]
+    },
+    "seoURL": {
+      "$id": "#/properties/seoURL",
+      "type": "string",
+      "title": "Product SEO Url",
+      "description": "SEO Friendly Url of the Product",
+      "examples": [
+        "petite-twisted-front-fit-and-flare-midi-dress/p/clp60263304"
+      ]
+    },
+    "categoryList": {
+      "$id": "#/properties/categoryList",
+      "type": "array",
+      "title": "The Category Hierarchy List schema",
+      "description": "This is the list of all linked sales category hierarchical information",
+      "default": [],
+      "examples": [
+        [
+          {
+            "id": "IE_SubCategory_1001441",
+            "name": "Petite",
+            "seoURL": "l/women/petite",
+            "parentNode": {
+              "id": "IE_SubCategory_18139919",
+              "name": "Shop by fit",
+              "seoURL": "",
+              "parentNode": {
+                "id": "IE_SC_Level_1_1000001",
+                "name": "Women",
+                "seoURL": "c/women",
+                "parentNode": {
+                  "id": "IE_SC_Level_0_12466",
+                  "name": "IE Web Root",
+                  "seoURL": "",
+                  "metadata": {
+                    "isHidden": "No",
+                    "imageLandscape": "No",
+                    "viewType": "MODEL"
+                  },
+                  "storeId": "IE"
+                },
+                "metadata": {
+                  "isHidden": "No",
+                  "imageLandscape": "No",
+                  "viewType": "Product"
+                },
+                "storeId": "IE",
+                "deleted": false
+              },
+              "metadata": {
+                "isHidden": "No",
+                "imageLandscape": "No",
+                "viewType": "MODEL"
+              },
+              "storeId": "IE"
+            },
+            "metadata": {
+              "isHidden": "No",
+              "imageLandscape": "No",
+              "viewType": "MODEL"
+            },
+            "storeId": "IE",
+            "deleted": false
+          },
+          {
+            "id": "IE_SubCategory_1002041",
+            "name": "Dresses",
+            "seoURL": "l/women/dresses",
+            "masterCategory": "Yes",
+            "parentNode": {
+              "id": "IE_SubCategory_20006017",
+              "name": "Clothing",
+              "seoURL": "",
+              "parentNode": {
+                "id": "IE_SC_Level_1_1000001",
+                "name": "Women",
+                "seoURL": "c/women",
+                "parentNode": {
+                  "id": "IE_SC_Level_0_12466",
+                  "name": "IE Web Root",
+                  "seoURL": "",
+                  "metadata": {
+                    "isHidden": "No",
+                    "imageLandscape": "No",
+                    "viewType": "MODEL"
+                  },
+                  "storeId": "IE"
+                },
+                "metadata": {
+                  "isHidden": "No",
+                  "imageLandscape": "No",
+                  "viewType": "Product"
+                },
+                "storeId": "IE",
+                "deleted": false
+              },
+              "metadata": {
+                "isHidden": "No",
+                "imageLandscape": "No",
+                "viewType": "MODEL"
+              },
+              "storeId": "IE"
+            },
+            "metadata": {
+              "isHidden": "No",
+              "imageLandscape": "No",
+              "viewType": "MODEL"
+            },
+            "storeId": "IE",
+            "deleted": false
+          }
+        ]
+      ],
+      "additionalItems": true,
+      "items": {
+        "$id": "#/properties/CategoryBasicInfo",
+        "type": "object",
+        "title": "Basic Category Information",
+        "description": "Information about the category and its parent category hierarchy",
+        "default": {},
+        "examples": [
+          {
+            "id": "IE_SubCategory_1001441",
+            "name": "Petite",
+            "seoURL": "l/women/petite",
+            "parentNode": {
+                "id": "IE_SubCategory_18139919",
+                "name": "Shop by fit",
+                "seoURL": "",
+                "parentNode": {
+                    "id": "IE_SC_Level_1_1000001",
+                    "name": "Women",
+                    "seoURL": "c/women",
+                    "parentNode": {
+                        "id": "IE_SC_Level_0_12466",
+                        "name": "IE Web Root",
+                        "seoURL": "",
+                        "metadata": {
+                            "isHidden": "No",
+                            "imageLandscape": "No",
+                            "viewType": "MODEL"
+                        },
+                        "storeId": "IE"
+                    },
+                    "metadata": {
+                        "isHidden": "No",
+                        "imageLandscape": "No",
+                        "viewType": "Product"
+                    },
+                    "storeId": "IE",
+                    "deleted": false
+                },
+                "metadata": {
+                    "isHidden": "No",
+                    "imageLandscape": "No",
+                    "viewType": "MODEL"
+                },
+                "storeId": "IE"
+            },
+            "metadata": {
+                "isHidden": "No",
+                "imageLandscape": "No",
+                "viewType": "MODEL"
+            },
+            "storeId": "IE",
+            "deleted": false
+        }
+        ]
+
+      }
+    },
+    "alternateURLs": {
+      "$id": "#/properties/alternateURLs",
+      "type": "array",
+      "title": "The alternateURLs schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": [],
+      "examples": [
+        [
+          {
+            "locale": "en-IE",
+            "url": "https://www.marksandspencer.com/ie/petite-twisted-front-fit-and-flare-midi-dress/p/clp60263304"
+          }
+        ]
+      ],
+      "additionalItems": true,
+      "items": {
+        "$id": "#/properties/LocaleUrl",
+        "type": "object",
+        "title": "Locale Url",
+        "description": "This provides the locale and url details of alternative urls",
+        "examples":[
+          {
+            "locale": "en-IE",
+            "url": "https://www.marksandspencer.com/ie/petite-twisted-front-fit-and-flare-midi-dress/p/clp60263304"
+          }
+        ]
+      }
+    }
+  },
+  "additionalProperties": true
+}

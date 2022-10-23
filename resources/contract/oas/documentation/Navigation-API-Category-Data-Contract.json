@@ -1,0 +1,791 @@
+{
+	"swagger": "2.0",
+	"info": {
+		"description": "Providing navigational services for .COM platform",
+		"version": "1.0",
+		"title": "Navigation Category API Documentation"
+	},
+	"host": "localhost:8080",
+	"basePath": "/",
+	"tags": [
+		{
+			"name": "Category Hierarchy Exposer",
+			"description": "Category Hierarchy Controller"
+		},
+		{
+			"name": "Category details Exposer",
+			"description": "Category Lookup Controller"
+		},
+		{
+			"name": "International Locale URL Lookup",
+			"description": "Category Locale Lookup Controller"
+		}
+	],
+	"paths": {
+		"/nav-category/v1/categories": {
+			"get": {
+				"tags": [
+					"Category Hierarchy Exposer"
+				],
+				"summary": "Get L1 & L2 category details using Store and Department(s)\n",
+				"operationId": "getCategoryHierarchyDetailsUsingGET",
+				"produces": [
+					"application/json"
+				],
+				"parameters": [
+					{
+						"name": "departments",
+						"in": "query",
+						"description": "Department Name separated by comma. e.g Women,Men",
+						"required": false,
+						"type": "string"
+					},
+					{
+						"name": "storeId",
+						"in": "query",
+						"description": "Country code",
+						"required": true,
+						"type": "string",
+						"default": "UK",
+						"enum": [
+							"IE",
+							"UK"
+						]
+					}
+				],
+				"responses": {
+					"200": {
+						"description": "Success",
+						"schema": {
+							"type": "array",
+							"items": {
+								"$ref": "#/definitions/CategoryHierarchy"
+							}
+						}
+					},
+					"400": {
+						"description": "Bad Request"
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Resource not found"
+					},
+					"500": {
+						"description": "Failed to get category lookup content"
+					}
+				}
+			}
+		},
+		"/nav-category/v1/category/hierarchy": {
+			"get": {
+				"tags": [
+					"Category Hierarchy Exposer"
+				],
+				"summary": "Get  parent & child category details, using Store and SEO.\n",
+				"operationId": "getCategoryHierarchyDetailsBySeoUsingGET",
+				"produces": [
+					"application/json"
+				],
+				"parameters": [
+					{
+						"name": "seoURL",
+						"in": "query",
+						"description": "seoURL",
+						"required": true,
+						"type": "string"
+					},
+					{
+						"name": "storeId",
+						"in": "query",
+						"description": "Country code",
+						"required": true,
+						"type": "string",
+						"default": "UK",
+						"enum": [
+							"CFTO",
+							"IE",
+							"IECFTO",
+							"UK"
+						]
+					}
+				],
+				"responses": {
+					"200": {
+						"description": "Success",
+						"schema": {
+							"type": "array",
+							"items": {
+								"$ref": "#/definitions/CategoryHierarchy"
+							}
+						}
+					},
+					"400": {
+						"description": "Bad Request"
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Resource not found"
+					},
+					"500": {
+						"description": "Failed to get category lookup content"
+					}
+				}
+			}
+		},
+		"/nav-category/v1/category/seo": {
+			"get": {
+				"tags": [
+					"Category details Exposer"
+				],
+				"summary": "Get the Category, using the SEOURL \n",
+				"operationId": "getCategoryBySEOurlUsingGET",
+				"produces": [
+					"application/json"
+				],
+				"parameters": [
+					{
+						"name": "correlationId",
+						"in": "header",
+						"description": "correlationId",
+						"required": false,
+						"type": "string",
+						"default": "Blank"
+					},
+					{
+						"name": "isAttrReq",
+						"in": "query",
+						"description": "isAttrReq",
+						"required": false,
+						"type": "boolean",
+						"default": false
+					},
+					{
+						"name": "seoURL",
+						"in": "query",
+						"description": "seoURL",
+						"required": true,
+						"type": "string"
+					},
+					{
+						"name": "storeId",
+						"in": "query",
+						"description": "storeId",
+						"required": true,
+						"type": "string"
+					}
+				],
+				"responses": {
+					"200": {
+						"description": "Success",
+						"schema": {
+							"$ref": "#/definitions/CategoryDetail"
+						}
+					},
+					"400": {
+						"description": "Bad Request"
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Resource not found"
+					},
+					"500": {
+						"description": "Failed to get category lookup content"
+					}
+				}
+			}
+		},
+		"/nav-category/v1/category/{categoryId}": {
+			"get": {
+				"tags": [
+					"Category details Exposer"
+				],
+				"summary": "Get the Category seo details, using the category identifier i.e SubCategory_122333\n",
+				"operationId": "getCategoryByCategoryIdUsingGET",
+				"produces": [
+					"application/json"
+				],
+				"parameters": [
+					{
+						"name": "categoryId",
+						"in": "path",
+						"description": "categoryId",
+						"required": true,
+						"type": "string"
+					}
+				],
+				"responses": {
+					"200": {
+						"description": "Success",
+						"schema": {
+							"type": "array",
+							"items": {
+								"$ref": "#/definitions/CategoryDetail"
+							}
+						}
+					},
+					"400": {
+						"description": "Bad Request"
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Resource not found"
+					},
+					"500": {
+						"description": "Failed to get category lookup content"
+					}
+				}
+			}
+		},
+		"/nav-category/v1/category/{categoryId}/facets": {
+			"get": {
+				"tags": [
+					"Category Hierarchy Exposer"
+				],
+				"summary": "Get facet seo details, using the category identifier & facet type.\n",
+				"operationId": "getFacetSeoDetailsByCategoryIdUsingGET",
+				"produces": [
+					"application/json"
+				],
+				"parameters": [
+					{
+						"name": "categoryId",
+						"in": "path",
+						"description": "categoryId",
+						"required": true,
+						"type": "string"
+					},
+					{
+						"name": "facetType",
+						"in": "query",
+						"description": "facetType",
+						"required": false,
+						"type": "string"
+					}
+				],
+				"responses": {
+					"200": {
+						"description": "Success",
+						"schema": {
+							"type": "array",
+							"items": {
+								"$ref": "#/definitions/Category"
+							}
+						}
+					},
+					"400": {
+						"description": "Bad Request"
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Resource not found"
+					},
+					"500": {
+						"description": "Failed to get category lookup content"
+					}
+				}
+			}
+		},
+		"/nav-category/v1/category/{categoryId}/hierarchy": {
+			"get": {
+				"tags": [
+					"Category Hierarchy Exposer"
+				],
+				"summary": "Get parent & child category details, using category identifier.\n",
+				"operationId": "getCategoryHierarchyDetailsByIdUsingGET",
+				"produces": [
+					"application/json"
+				],
+				"parameters": [
+					{
+						"name": "categoryId",
+						"in": "path",
+						"description": "categoryId",
+						"required": true,
+						"type": "string"
+					}
+				],
+				"responses": {
+					"200": {
+						"description": "Success",
+						"schema": {
+							"type": "array",
+							"items": {
+								"$ref": "#/definitions/CategoryHierarchy"
+							}
+						}
+					},
+					"400": {
+						"description": "Bad Request"
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Resource not found"
+					},
+					"500": {
+						"description": "Failed to get category lookup content"
+					}
+				}
+			}
+		},
+		"/nav-category/v1/international/categories": {
+			"get": {
+				"tags": [
+					"International Locale URL Lookup"
+				],
+				"summary": "getCategoryMappingDetails",
+				"operationId": "getCategoryMappingDetailsUsingGET",
+				"produces": [
+					"application/json"
+				],
+				"parameters": [
+					{
+						"name": "storeId",
+						"in": "query",
+						"description": "storeId",
+						"required": true,
+						"type": "string",
+						"default": "EU",
+						"enum": [
+							"EU",
+							"IE",
+							"UK"
+						]
+					}
+				],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"schema": {
+							"type": "array",
+							"items": {
+								"$ref": "#/definitions/IntlMappingDetails"
+							}
+						}
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		},
+		"/nav-category/v1/international/categories/{categoryId}": {
+			"get": {
+				"tags": [
+					"International Locale URL Lookup"
+				],
+				"summary": "getCategoryMappingDetailsById",
+				"operationId": "getCategoryMappingDetailsByIdUsingGET",
+				"produces": [
+					"application/json"
+				],
+				"parameters": [
+					{
+						"name": "categoryId",
+						"in": "path",
+						"description": "categoryId",
+						"required": true,
+						"type": "string"
+					}
+				],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"schema": {
+							"type": "array",
+							"items": {
+								"$ref": "#/definitions/IntlMappingDetails"
+							}
+						}
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				}
+			}
+		}
+	},
+	"definitions": {
+		"BreadCrumb": {
+			"type": "object",
+			"properties": {
+				"name": {
+					"type": "string"
+				},
+				"position": {
+					"type": "integer",
+					"format": "int32"
+				},
+				"url": {
+					"type": "string"
+				}
+			},
+			"title": "BreadCrumb"
+		},
+		"Category": {
+			"type": "object",
+			"properties": {
+				"categoryHierarchyType": {
+					"type": "string"
+				},
+				"deleted": {
+					"type": "boolean"
+				},
+				"id": {
+					"type": "string"
+				},
+				"lastModified": {
+					"type": "string",
+					"format": "date-time"
+				},
+				"metadata": {
+					"type": "object",
+					"additionalProperties": {
+						"type": "string"
+					}
+				},
+				"name": {
+					"type": "string"
+				},
+				"parentCategoryHierarchy": {
+					"type": "string"
+				},
+				"parentCategoryID": {
+					"type": "string"
+				},
+				"parentNode": {
+					"$ref": "#/definitions/Category"
+				},
+				"productAvailabilityUpdationDate": {
+					"type": "string",
+					"format": "date-time"
+				},
+				"productAvailable": {
+					"type": "boolean"
+				},
+				"publishEndDate": {
+					"type": "string"
+				},
+				"publishStartDate": {
+					"type": "string"
+				},
+				"seoURL": {
+					"type": "string"
+				},
+				"storeId": {
+					"type": "string"
+				},
+				"userTypeID": {
+					"type": "string"
+				},
+				"valueGroups": {
+					"type": "array",
+					"items": {
+						"$ref": "#/definitions/ValueGroup"
+					}
+				},
+				"values": {
+					"type": "array",
+					"items": {
+						"$ref": "#/definitions/Value"
+					}
+				}
+			},
+			"title": "Category"
+		},
+		"CategoryDetail": {
+			"type": "object",
+			"properties": {
+				"alternateURLs": {
+					"type": "array",
+					"items": {
+						"$ref": "#/definitions/LocaleUrl"
+					}
+				},
+				"breadCrumbs": {
+					"type": "array",
+					"items": {
+						"$ref": "#/definitions/BreadCrumb"
+					}
+				},
+				"facetParams": {
+					"type": "array",
+					"items": {
+						"$ref": "#/definitions/ObjectNode"
+					}
+				},
+				"foundit": {
+					"type": "object"
+				},
+				"identifier": {
+					"type": "string"
+				},
+				"isActive": {
+					"type": "string"
+				},
+				"isPlp": {
+					"type": "string"
+				},
+				"metaData": {
+					"$ref": "#/definitions/CategoryMetaData"
+				},
+				"name": {
+					"type": "string"
+				},
+				"pageDetails": {
+					"$ref": "#/definitions/CategoryPageDetail"
+				},
+				"path": {
+					"type": "string"
+				},
+				"seoDetails": {
+					"$ref": "#/definitions/CategorySeoDetail"
+				}
+			},
+			"title": "CategoryDetail"
+		},
+		"CategoryHierarchy": {
+			"type": "object",
+			"properties": {
+				"_id": {
+					"type": "string"
+				},
+				"childCategories": {
+					"type": "array",
+					"items": {
+						"$ref": "#/definitions/CategoryHierarchy"
+					}
+				},
+				"isChildExist": {
+					"type": "boolean"
+				},
+				"isFacetExist": {
+					"type": "boolean"
+				},
+				"name": {
+					"type": "string"
+				},
+				"seoURL": {
+					"type": "string"
+				},
+				"storeId": {
+					"type": "string"
+				}
+			},
+			"title": "CategoryHierarchy"
+		},
+		"CategoryMetaData": {
+			"type": "object",
+			"properties": {
+				"contentPageSpotlightId": {
+					"type": "string"
+				},
+				"contentPageSpotlightVersion": {
+					"type": "string"
+				}
+			},
+			"title": "CategoryMetaData"
+		},
+		"CategoryPageDetail": {
+			"type": "object",
+			"properties": {
+				"facetSEOEnabled": {
+					"type": "string"
+				},
+				"imageLandscape": {
+					"type": "string"
+				},
+				"pageIndex": {
+					"type": "string"
+				},
+				"sortBy": {
+					"type": "string"
+				},
+				"spotlightId": {
+					"type": "string"
+				},
+				"spotlightProductCount": {
+					"type": "string"
+				},
+				"spotlightVersion": {
+					"type": "string"
+				},
+				"templateType": {
+					"type": "string"
+				},
+				"viewType": {
+					"type": "string"
+				}
+			},
+			"title": "CategoryPageDetail"
+		},
+		"CategorySeoDetail": {
+			"type": "object",
+			"properties": {
+				"bannerEspotName": {
+					"type": "string"
+				},
+				"bannerTitle": {
+					"type": "string"
+				},
+				"metaDescription": {
+					"type": "string"
+				},
+				"navList": {
+					"type": "string"
+				},
+				"pageSeoUrl": {
+					"type": "string"
+				},
+				"pageTitle": {
+					"type": "string"
+				},
+				"parentSeoUrl": {
+					"type": "string"
+				}
+			},
+			"title": "CategorySeoDetail"
+		},
+		"IntlMappingDetails": {
+			"type": "object",
+			"properties": {
+				"active": {
+					"type": "boolean"
+				},
+				"alternateURLs": {
+					"type": "array",
+					"items": {
+						"$ref": "#/definitions/LocaleUrl"
+					}
+				},
+				"categoryId": {
+					"type": "string"
+				},
+				"storeId": {
+					"type": "string"
+				}
+			},
+			"title": "IntlMappingDetails"
+		},
+		"LocaleUrl": {
+			"type": "object",
+			"properties": {
+				"locale": {
+					"type": "string"
+				},
+				"url": {
+					"type": "string"
+				}
+			},
+			"title": "LocaleUrl"
+		},
+		"ObjectNode": {
+			"type": "object",
+			"title": "ObjectNode"
+		},
+		"RedirectionDetail": {
+			"type": "object",
+			"properties": {
+				"facetParams": {
+					"type": "array",
+					"items": {
+						"$ref": "#/definitions/ObjectNode"
+					}
+				},
+				"redirectUrl": {
+					"type": "string"
+				}
+			},
+			"title": "RedirectionDetail"
+		},
+		"Value": {
+			"type": "object",
+			"properties": {
+				"attributeID": {
+					"type": "string"
+				},
+				"content": {
+					"type": "string"
+				},
+				"derived": {
+					"type": "string"
+				},
+				"derivedContextID": {
+					"type": "string"
+				},
+				"id": {
+					"type": "string"
+				},
+				"inherited": {
+					"type": "string"
+				},
+				"inheritedFrom": {
+					"type": "string"
+				},
+				"qualifierID": {
+					"type": "string"
+				},
+				"unitID": {
+					"type": "string"
+				}
+			},
+			"title": "Value"
+		},
+		"ValueGroup": {
+			"type": "object",
+			"properties": {
+				"attributeId": {
+					"type": "string"
+				},
+				"values": {
+					"type": "array",
+					"items": {
+						"$ref": "#/definitions/Value"
+					}
+				}
+			},
+			"title": "ValueGroup"
+		}
+	}
+}

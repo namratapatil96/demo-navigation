@@ -1,0 +1,18 @@
+mns-apigee-header:
+  type: Pass Through
+  displayName: Apigee Tokens
+  description: |
+    When hitting the Apigee URLs this security scheme of Apigee Tokens must be used.  To get your application tokens you must have registered your app in Apigee.
+  describedBy:
+    headers:
+      Authorization?:
+        pattern: "MSAuth apikey=.*"
+        example: "MSAuth apikey=RnCbl7"
+mns-apigee-parameter:
+  type: Pass Through
+  displayName: Apigee Key Parameter
+  describedBy:
+    queryParameters:
+      apikey:
+        type: string
+        example: "apikey=RnCbl7"

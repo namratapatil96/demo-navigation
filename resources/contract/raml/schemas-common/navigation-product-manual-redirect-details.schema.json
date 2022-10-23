@@ -1,0 +1,41 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$id": "#/ProductSeoManualRedirectionDetails",
+    "$ref": "#/definitions/ProductSeoRedirectionDetails",
+    "title": "The root schema for Product SEO manual redirection details Response ",
+    "type": "object",
+    "description": "The root schema comprises the entire JSON schema of Product SEO redirection details Response Type.",
+    "examples": [
+      { "$ref": "../examples-responses/get-product-seo-redirect-dtl-200.example.json" }
+    ],
+    "definitions": {
+        "ProductSeoRedirectionDetails": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "redirection": {
+                    "$ref": "#/definitions/Redirection"
+                }
+            },
+            "required": [
+                "redirection"
+            ],
+            "title": "ProductSeoDetails"
+        },
+            "Redirection": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "seoURL": {
+                    "type": "string",
+                    "title": "Product Redirected Url",
+                    "description": "SEO Friendly Url of the Product",
+                    "examples": [
+                      "petite-twisted-front-fit-and-flare-midi-dress-new/p/clp60263304"
+                    ]
+                }
+            },
+            "title": "Redirection"
+        }
+    }
+}

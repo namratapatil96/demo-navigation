@@ -1,0 +1,61 @@
+name: Hive Dev
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - "resources/contract/oas/documentation/**.json"
+  pull_request:
+    branches:
+      - master
+    paths:
+      - "resources/contract/oas/documentation/**.json"
+
+env:
+  NODE_VERSION: 16.x
+  HIVE_CATEGORY_TOKEN: ${{ secrets.HIVE_CATEGORY_TOKEN }}
+  HIVE_PRODUCT_TOKEN: ${{ secrets.HIVE_PRODUCT_TOKEN }}
+  HIVE_FACET_TOKEN: ${{ secrets.HIVE_FACET_TOKEN }}
+
+jobs:
+  graphql:
+    name: GraphQL Schema Check
+    runs-on: ubuntu-latest
+    continue-on-error: ${{ contains(github.event.pull_request.labels.*.name, 'approved-breaking-change') }}
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+        with:
+          persist-credentials: false
+
+      - name: Setup NodeJS
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: "yarn"
+          cache-dependency-path: "hive/yarn.lock"
+
+      - name: Install Dependencies
+        run: yarn --cwd hive install
+
+      - name: Build
+        run: yarn --cwd hive build
+
+      - name: Schema Check
+        if: ${{ github.event_name == 'pull_request' }}
+        run: |
+          cd ./hive/
+          echo "### 🐝 Hive Schema Check" > hive_output.txt
+          yarn --cwd hive --silent schema:check >> hive_output.txt
+          
+      - name: Schema Publish (development)
+        if: ${{ github.event_name == 'push' }}
+        run: |
+          cd ./hive/
+          yarn --cwd hive --silent schema:publish
+          
+      - name: Publish PR Comment
+        if: ${{ always() && github.event_name == 'pull_request' }}
+        uses: marocchino/sticky-pull-request-comment@v2
+        with:
+          path: ./hive/hive_output.txt

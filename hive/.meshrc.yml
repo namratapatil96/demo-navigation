@@ -1,0 +1,13 @@
+sources:
+  - name: NavigationCategories
+    handler:
+      newOpenapi:
+        oasFilePath: "../resources/contract/oas/documentation/Navigation-API-Category-Data-Contract.json"
+  - name: NavigationProducts
+    handler:
+      newOpenapi:
+        oasFilePath: "../resources/contract/oas/documentation/Navigation-API-Product-Data-Contract.json"
+  - name: NavigationFacets
+    handler:
+      newOpenapi:
+        oasFilePath: "../resources/contract/oas/documentation/Navigation-API-Facet-Data-Contract.json"
