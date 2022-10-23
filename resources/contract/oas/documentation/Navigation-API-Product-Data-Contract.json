@@ -7,8 +7,7 @@
     },
     "host": "localhost:8080",
     "basePath": "/",
-    "tags
-    ": [
+    "tags": [
       {
         "name": "International",
         "description": "Product Locale Lookup Controller"
@@ -36,6 +35,15 @@
           "parameters": [
             {
               "name": "page",
+              "in": "query",
+              "description": "page",
+              "required": false,
+              "type": "integer",
+              "default": 0,
+              "format": "int32"
+            },
+            {
+              "name": "page123",
               "in": "query",
               "description": "page",
               "required": false,
