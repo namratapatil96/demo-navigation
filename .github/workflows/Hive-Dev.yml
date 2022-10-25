@@ -52,6 +52,9 @@ jobs:
         run: |
           echo "### 🐝 Hive Schema Check" > hive_output_product.txt
           yarn --cwd hive --silent schema:check_product
+
+      -name: Concatenate files
+       run: cat hive/*.txt > hive/hive_output_category.txt
           
       - name: Schema Publish (development)
         if: ${{ github.event_name == 'push' }}
@@ -62,6 +65,4 @@ jobs:
         if: ${{ always() && github.event_name == 'pull_request' }}
         uses: marocchino/sticky-pull-request-comment@v2
         with:
-          path: 
-            - hive_output_category.txt
-            - hive_output_product.txt
+          path: hive_output_category.txt
