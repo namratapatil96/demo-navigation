@@ -48,8 +48,6 @@ jobs:
         if: ${{ github.event_name == 'push' }}
         run: |
           yarn --cwd hive --silent schema:publish_category_prod
-          yarn --cwd hive --silent schema:publish_facet_prod
-          yarn --cwd hive --silent schema:publish_product_prod
           
       - name: Publish PR Comment (category)
         if: ${{ always() && github.event_name == 'pull_request' }}
