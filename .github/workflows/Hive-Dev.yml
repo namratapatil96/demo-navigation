@@ -56,6 +56,7 @@ jobs:
       - name: Concate 
         run: |
           cd ./hive/
+          ls
           cat hive_output_product.txt >> hive_output_category.txt
 
       - name: Schema Publish (development)
