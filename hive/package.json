@@ -20,7 +20,7 @@
     "schema:check": "hive schema:check ./.mesh/sources/NavigationCategories/schema.graphql --token $HIVE_CATEGORY_TOKEN",
     "schema:publish": "hive schema:publish ./.mesh/sources/NavigationCategories/schema.graphql --metadata \"./.mesh/sources/NavigationCategories/jsonSchemaBundle.json\" --token $HIVE_CATEGORY_TOKEN --force",
 
-    "schema:check": "hive schema:check ./.mesh/sources/NavigationProducts/schema.graphql --token $HIVE_PRODUCT_TOKEN",
+    "schema:check_product": "hive schema:check ./.mesh/sources/NavigationProducts/schema.graphql --token $HIVE_PRODUCT_TOKEN",
     "schema:publish": "hive schema:publish ./.mesh/sources/NavigationProducts/schema.graphql --metadata \"./.mesh/sources/NavigationProducts/jsonSchemaBundle.json\" --token $HIVE_PRODUCT_TOKEN --force"
   }
 }
