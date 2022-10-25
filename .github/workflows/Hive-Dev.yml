@@ -45,19 +45,19 @@ jobs:
         if: ${{ github.event_name == 'pull_request' }}
         run: |
           echo "### 🐝 Hive Schema Check" > hive_output_category.txt
-          yarn --cwd hive --silent schema:check_category >> hive_output_category.txt
+          yarn --cwd hive --silent schema:check_category >> hive_output.txt
 
       - name: Schema Check (product)
         if: ${{ github.event_name == 'pull_request' }}
         run: |
           echo "### 🐝 Hive Schema Check" > hive_output_product.txt
-          yarn --cwd hive --silent schema:check_product >> hive_output_product.txt
+          yarn --cwd hive --silent schema:check_product >> hive_output.txt
 
-      - name: Concate 
-        run: |
-          cd ./hive/
-          ls
-          cat hive_output_category.txt >> hive_output_product.txt
+      # - name: Concate 
+      #   run: |
+      #     cd ./hive/
+      #     ls
+      #     cat hive_output_category.txt >> hive_output_product.txt
 
       - name: Schema Publish (development)
         if: ${{ github.event_name == 'push' }}
@@ -68,4 +68,4 @@ jobs:
         if: ${{ always() && github.event_name == 'pull_request' }}
         uses: marocchino/sticky-pull-request-comment@v2
         with:
-          path: hive_output_category.txt
+          path: hive_output.txt
