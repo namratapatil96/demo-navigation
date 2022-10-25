@@ -62,10 +62,6 @@ jobs:
         if: ${{ always() && github.event_name == 'pull_request' }}
         uses: marocchino/sticky-pull-request-comment@v2
         with:
-          path: hive_output_category.txt
-
-      - name: Publish PR Comment (product)
-        if: ${{ always() && github.event_name == 'pull_request' }}
-        uses: marocchino/sticky-pull-request-comment@v2
-        with:
-          path: hive_output_product.txt
+          path: 
+          - ./hive/hive_output_category.txt
+          - ./hive/hive_output_product.txt
