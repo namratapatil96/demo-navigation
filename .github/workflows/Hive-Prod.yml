@@ -2,25 +2,21 @@ name: Hive Prod
 on:
   push:
     branches:
-      - master
-    paths:
-      - "nams/**.txt"
-  pull_request:
-    branches:
-      - master
+      - test
     paths:
       - "nams/**.txt"
 
 env:
   NODE_VERSION: 16.x
-  HIVE_CATEGORY_TOKEN: ${{ secrets.HIVE_CATEGORY_TOKEN }}
-  HIVE_PRODUCT_TOKEN: ${{ secrets.HIVE_PRODUCT_TOKEN }}
-  HIVE_FACET_TOKEN: ${{ secrets.HIVE_FACET_TOKEN }}
+  HIVE_CATEGORY_TOKEN: ${{ secrets.HIVE_CATEGORY_TOKEN_PROD }}
+  HIVE_PRODUCT_TOKEN: ${{ secrets.HIVE_PRODUCT_TOKEN_PROD }}
+  HIVE_FACET_TOKEN: ${{ secrets.HIVE_FACET_TOKEN_PROD }}
 
 jobs:
   graphql:
-    name: Publishing GraphQL Schema
+    name: GraphQL Schema Check
     runs-on: ubuntu-latest
+    continue-on-error: ${{ contains(github.event.pull_request.labels.*.name, 'approved-breaking-change') }}
     steps:
       - name: Checkout repo
         uses: actions/checkout@v3
@@ -44,14 +40,18 @@ jobs:
         if: ${{ github.event_name == 'pull_request' }}
         run: |
           echo "### 🐝 Hive Schema Check" > hive_output.txt
-          yarn --cwd hive --silent schema:check >> hive_output.txt
-
+          yarn --cwd hive --silent schema:check_category >> hive_output.txt
+          yarn --cwd hive --silent schema:check_facet >> hive_output.txt
+          yarn --cwd hive --silent schema:check_product >> hive_output.txt
+      
       - name: Schema Publish (development)
         if: ${{ github.event_name == 'push' }}
         run: |
-          yarn --cwd hive --silent schema:publish
-
-      - name: Publish PR Comment
+          yarn --cwd hive --silent schema:publish_category_prod
+          yarn --cwd hive --silent schema:publish_facet_prod
+          yarn --cwd hive --silent schema:publish_product_prod
+          
+      - name: Publish PR Comment (category)
         if: ${{ always() && github.event_name == 'pull_request' }}
         uses: marocchino/sticky-pull-request-comment@v2
         with:
