@@ -63,5 +63,5 @@ jobs:
         uses: marocchino/sticky-pull-request-comment@v2
         with:
           path: 
-          - ./hive/hive_output_category.txt
-          - ./hive/hive_output_product.txt
+          - /hive/hive_output_category.txt
+          - /hive/hive_output_product.txt
