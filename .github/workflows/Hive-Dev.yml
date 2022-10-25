@@ -53,7 +53,11 @@ jobs:
           echo "### 🐝 Hive Schema Check" > hive_output_product.txt
           yarn --cwd hive --silent schema:check_product >> hive_output_product.txt
 
-          
+      -name: Concate 
+       run: |
+        cd ./hive/
+        cat hive_output_product.txt >> hive_output_category.txt
+
       - name: Schema Publish (development)
         if: ${{ github.event_name == 'push' }}
         run: |
