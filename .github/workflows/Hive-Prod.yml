@@ -2,7 +2,7 @@ name: Hive Prod
 on:
   push:
     branches:
-      - master
+      - test
     paths:
       - "nams/**.txt"
   pull_request:
