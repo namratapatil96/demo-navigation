@@ -7,7 +7,7 @@ on:
       - "nams/**.txt"
   pull_request:
     branches:
-      - master
+      - test
     paths:
       - "nams/**.txt"
 
