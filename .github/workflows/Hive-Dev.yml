@@ -41,24 +41,25 @@ jobs:
       - name: Build
         run: yarn --cwd hive build
 
-      - name: Schema Check (category)
+      - name: Schema Check (Category Module)
         if: ${{ github.event_name == 'pull_request' }}
         run: |
-          echo "### 🐝 Hive Schema Check" > hive_output_category.txt
+          echo "### 🐝 Hive Schema Check" > hive_output.txt
           yarn --cwd hive --silent schema:check_category >> hive_output.txt
-
-      - name: Schema Check (product)
-        if: ${{ github.event_name == 'pull_request' }}
-        run: |
-          echo "### 🐝 Hive Schema Check" > hive_output_product.txt
           yarn --cwd hive --silent schema:check_product >> hive_output.txt
 
-      # - name: Concate 
+      # - name: Schema Check (Facet Module)
+      #   if: ${{ github.event_name == 'pull_request' }}
       #   run: |
-      #     cd ./hive/
-      #     ls
-      #     cat hive_output_category.txt >> hive_output_product.txt
+      #     echo "### 🐝 Hive Schema Check" > hive_output.txt
+      #     yarn --cwd hive --silent schema:check_facet >> hive_output.txt
 
+      # - name: Schema Check (Product Module)
+      #   if: ${{ github.event_name == 'pull_request' }}
+      #   run: |
+      #     echo "### 🐝 Hive Schema Check" > hive_output.txt
+      #     yarn --cwd hive --silent schema:check_product >> hive_output.txt
+      
       - name: Schema Publish (development)
         if: ${{ github.event_name == 'push' }}
         run: |
