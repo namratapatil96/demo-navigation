@@ -58,8 +58,14 @@ jobs:
         run: |
           yarn --cwd hive --silent schema:publish
           
-      - name: Publish PR Comment
+      - name: Publish PR Comment (category)
         if: ${{ always() && github.event_name == 'pull_request' }}
         uses: marocchino/sticky-pull-request-comment@v2
         with:
           path: hive_output_category.txt
+
+      - name: Publish PR Comment (product)
+        if: ${{ always() && github.event_name == 'pull_request' }}
+        uses: marocchino/sticky-pull-request-comment@v2
+        with:
+          path: hive_output_product.txt
