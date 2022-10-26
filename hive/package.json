@@ -25,10 +25,11 @@
 
     "schema:check_facet": "hive schema:check ./.mesh/sources/NavigationFacets/schema.graphql --token $HIVE_FACET_TOKEN",
     "schema:publish_facet": "hive schema:publish ./.mesh/sources/NavigationFacets/schema.graphql --metadata \"./.mesh/sources/NavigationFacets/jsonSchemaBundle.json\" --token $HIVE_FACET_TOKEN --force",
-    
+    "facet:publish": "hive schema:publish ./.mesh/sources/NavigationCategories/schema.graphql --metadata \"./.mesh/sources/NavigationCategories/jsonSchemaBundle.json\" --token $HIVE_FACET_TOKEN --force",
 
     "schema:check_product": "hive schema:check ./.mesh/sources/NavigationProducts/schema.graphql --token $HIVE_PRODUCT_TOKEN",
-    "schema:publish_product": "hive schema:publish ./.mesh/sources/NavigationProducts/schema.graphql --metadata \"./.mesh/sources/NavigationProducts/jsonSchemaBundle.json\" --token $HIVE_PRODUCT_TOKEN --force"
+    "schema:publish_product": "hive schema:publish ./.mesh/sources/NavigationProducts/schema.graphql --metadata \"./.mesh/sources/NavigationProducts/jsonSchemaBundle.json\" --token $HIVE_PRODUCT_TOKEN --force",
+    "product:publish": "hive schema:publish ./.mesh/sources/NavigationProducts/schema.graphql --metadata \"./.mesh/sources/NavigationProducts/jsonSchemaBundle.json\" --token $HIVE_PRODUCT_TOKEN --force"
     
   }
 }
