@@ -2,14 +2,14 @@ name: Hive Prod
 on:
   push:
     branches:
-      - test
+      - master
     paths:
       - "nams/**.txt"
-  # pull_request:
-  #   branches:
-  #     - master
-  #   paths:
-  #     - "nams/**.txt"
+  pull_request:
+    branches:
+      - master
+    paths:
+      - "nams/**.txt"
 
 env:
   NODE_VERSION: 16.x

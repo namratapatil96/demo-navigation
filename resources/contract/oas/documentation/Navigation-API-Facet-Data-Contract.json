@@ -89,7 +89,7 @@
             "default": "Blank"
           },
           {
-            "name": "correlation123",
+            "name": "correlationName",
             "in": "header",
             "description": "correlationId",
             "required": false,
