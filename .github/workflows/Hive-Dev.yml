@@ -45,7 +45,7 @@ jobs:
         if: ${{ github.event_name == 'pull_request' }}
         run: |
           echo "### 🐝 Hive Schema Check" > hive_output.txt
-          yarn --cwd hive --silent schema:check_category
+          yarn --cwd hive --silent schema:check_category >> hive_output.txt
           yarn --cwd hive --silent schema:check_facet >> hive_output.txt
           yarn --cwd hive --silent schema:check_product >> hive_output.txt
       
