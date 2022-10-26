@@ -32,8 +32,6 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ env.NODE_VERSION }}
-          cache: "yarn"
-          cache-dependency-path: "hive/yarn.lock"
 
       - name: Install Dependencies
         run: yarn --cwd hive install
