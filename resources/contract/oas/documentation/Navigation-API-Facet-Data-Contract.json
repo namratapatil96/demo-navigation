@@ -89,14 +89,6 @@
             "default": "Blank"
           },
           {
-            "name": "correlationName",
-            "in": "header",
-            "description": "correlationId",
-            "required": false,
-            "type": "string",
-            "default": "Blank"
-          },
-          {
             "in": "body",
             "name": "facetDetails",
             "description": "facetDetails",
