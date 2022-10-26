@@ -28,7 +28,7 @@
     
 
     "schema:check_product": "hive schema:check ./.mesh/sources/NavigationProducts/schema.graphql --token $HIVE_PRODUCT_TOKEN",
-    "schema:publish_product": "hive schema:publish ./.mesh/sources/NavigationProducts/schema.graphql --metadata \"./.mesh/sources/NavigationProducts/jsonSchemaBundle.json\" --token $HIVE_PRODUCT_TOKEN --force",
+    "schema:publish_product": "hive schema:publish ./.mesh/sources/NavigationProducts/schema.graphql --metadata \"./.mesh/sources/NavigationProducts/jsonSchemaBundle.json\" --token $HIVE_PRODUCT_TOKEN --force"
     
   }
 }
