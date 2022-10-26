@@ -9,8 +9,6 @@ on:
 env:
   NODE_VERSION: 16.x
   HIVE_CATEGORY_TOKEN: ${{ secrets.HIVE_CATEGORY_TOKEN_PROD }}
-  HIVE_PRODUCT_TOKEN: ${{ secrets.HIVE_PRODUCT_TOKEN_PROD }}
-  HIVE_FACET_TOKEN: ${{ secrets.HIVE_FACET_TOKEN_PROD }}
 
 jobs:
   graphql:
@@ -41,15 +39,11 @@ jobs:
         run: |
           echo "### 🐝 Hive Schema Check" > hive_output.txt
           yarn --cwd hive --silent schema:check_category >> hive_output.txt
-          yarn --cwd hive --silent schema:check_facet >> hive_output.txt
-          yarn --cwd hive --silent schema:check_product >> hive_output.txt
       
       - name: Schema Publish (development)
         if: ${{ github.event_name == 'push' }}
         run: |
-          yarn --cwd hive --silent schema:publish_category_prod
-          yarn --cwd hive --silent schema:publish_facet_prod
-          yarn --cwd hive --silent schema:publish_product_prod
+          yarn --cwd hive --silent category:publish
           
       - name: Publish PR Comment (category)
         if: ${{ always() && github.event_name == 'pull_request' }}
