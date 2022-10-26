@@ -49,7 +49,7 @@ jobs:
           yarn --cwd hive --silent facet:check >> hive_output.txt
           yarn --cwd hive --silent product:check >> hive_output.txt
       
-      - name: Schema Publish (development)
+      - name: Schema Publish (production)
         if: ${{ github.event_name == 'push' }}
         run: |
           yarn --cwd hive --silent category:publish_prod
