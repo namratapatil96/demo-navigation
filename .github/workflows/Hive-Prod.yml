@@ -8,7 +8,7 @@ on:
 
 env:
   NODE_VERSION: 16.x
-  ABC: ${{ secrets.ABC }}
+  HIVE_CATEGORY_TOKEN: ${{ secrets.HIVE_CATEGORY_TOKEN_PROD }}
   # HIVE_PRODUCT_TOKEN: ${{ secrets.HIVE_PRODUCT_TOKEN_PROD }}
   # HIVE_FACET_TOKEN: ${{ secrets.HIVE_FACET_TOKEN_PROD }}
 
