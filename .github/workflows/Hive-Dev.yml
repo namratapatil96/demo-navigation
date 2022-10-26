@@ -32,6 +32,8 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ env.NODE_VERSION }}
+          cache: "yarn"
+          cache-dependency-path: "hive/yarn.lock"
 
       - name: Install Dependencies
         run: yarn --cwd hive install
@@ -43,7 +45,6 @@ jobs:
         if: ${{ github.event_name == 'pull_request' }}
         run: |
           echo "### 🐝 Hive Schema Check" > hive_output.txt
-          exit 1
           yarn --cwd hive --silent schema:check_category
           yarn --cwd hive --silent schema:check_facet >> hive_output.txt
           yarn --cwd hive --silent schema:check_product >> hive_output.txt
