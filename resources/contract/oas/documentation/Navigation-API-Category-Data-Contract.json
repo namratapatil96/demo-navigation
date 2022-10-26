@@ -41,6 +41,13 @@
 						"type": "string"
 					},
 					{
+						"name": "collage",
+						"in": "query",
+						"description": "collage",
+						"required": false,
+						"type": "string"
+					},
+					{
 						"name": "namrata",
 						"in": "query",
 						"description": "Department Name separated by comma. e.g Women,Men",
