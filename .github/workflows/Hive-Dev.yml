@@ -41,11 +41,11 @@ jobs:
       - name: Build
         run: yarn --cwd hive build
 
-      - name: Schema Check (Category Module)
+      - name: Schema Check
         if: ${{ github.event_name == 'pull_request' }}
         run: |
           echo "### 🐝 Hive Schema Check" > hive_output.txt
-          yarn --cwd hive --silent schema:check_category >> hive_output.txt
+          yarn --cwd hive --silent schema:check_category
           yarn --cwd hive --silent schema:check_facet >> hive_output.txt
           yarn --cwd hive --silent schema:check_product >> hive_output.txt
       
@@ -56,7 +56,7 @@ jobs:
           yarn --cwd hive --silent schema:publish_facet
           yarn --cwd hive --silent schema:publish_product
           
-      - name: Publish PR Comment (category)
+      - name: Publish PR Comment
         if: ${{ always() && github.event_name == 'pull_request' }}
         uses: marocchino/sticky-pull-request-comment@v2
         with:
