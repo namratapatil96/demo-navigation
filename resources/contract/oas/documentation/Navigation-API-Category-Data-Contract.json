@@ -34,6 +34,13 @@
 				],
 				"parameters": [
 					{
+						"name": "SIT",
+						"in": "query",
+						"description": "Department Name separated by comma. e.g Women,Men",
+						"required": false,
+						"type": "string"
+					},
+					{
 						"name": "departments",
 						"in": "query",
 						"description": "Department Name separated by comma. e.g Women,Men",
